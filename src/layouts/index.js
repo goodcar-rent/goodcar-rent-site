@@ -7,7 +7,7 @@ import './all.sass'
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="GoodCar.rent - Аренда легковых автомобилей в Новосибирске посуточно" />
+    <Helmet title="(beta) GoodCar.rent - Аренда легковых автомобилей в Новосибирске посуточно" />
     <Navbar />
     <div>{children()}</div>
   </div>
