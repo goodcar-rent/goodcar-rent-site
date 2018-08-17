@@ -1,0 +1,51 @@
+[
+  {
+    "caption": "Hyundai Solaris new 1,6 AT",
+    "ribbon": "new",
+    "engine": "1.6",
+    "fuel": "gas",
+    "transmission": "AT"
+  },
+  {
+    "caption": "Kia Rio new 1,6 AT",
+    "ribbon": "new",
+    "engine": "1.6",
+    "fuel": "gas",
+    "transmission": "AT"
+  },
+  {
+    "caption": "Hyundai Accent 1,6 AT",
+    "ribbon": "",
+    "engine": "1.6",
+    "fuel": "gas",
+    "transmission": "AT"
+  },
+  {
+    "caption": "Kia Spectra 1,5 MT",
+    "ribbon": "",
+    "engine": "1.5",
+    "fuel": "gas",
+    "transmission": "MT"
+  },
+  {
+    "caption": "Chevrolet Lacetti 1,6 MT",
+    "ribbon": "",
+    "engine": "1.6",
+    "fuel": "gas",
+    "transmission": "MT"
+  },
+  {
+    "caption": "Daewoo Nexia 1,5 MT",
+    "ribbon": "",
+    "engine": "1.5",
+    "fuel": "gas",
+    "transmission": "MT"
+  },
+  {
+    "caption": "Hyundai Matrix 1,8",
+    "ribbon": "",
+    "engine": "1.8",
+    "fuel": "gas",
+    "transmission": "AT"
+  }
+]
