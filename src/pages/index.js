@@ -1,9 +1,9 @@
 import React from 'react'
-import { Hero } from '../components/Hero'
-import { CarList } from '../components/CarList'
-import { ServiceList } from '../components/ServiceList'
-import { Process } from '../components/Process'
-import { Order } from '../components/Order'
+import { Hero } from '../components/hero'
+import { CarList } from '../components/car-list'
+import { ServiceList } from '../components/service-list'
+import { Process } from '../components/process'
+import { Order } from '../components/order'
 
 const IndexPage = () => (
   <div>

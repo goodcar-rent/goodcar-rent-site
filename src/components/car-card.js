@@ -1,5 +1,5 @@
 import React from 'react'
-import './carcard.css'
+import './car-card.css'
 import Car from '../images/car.png'
 
 const CarCard = props => {

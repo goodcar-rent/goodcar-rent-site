@@ -1,5 +1,5 @@
 import React from 'react'
-import CarCard from './carcard'
+import CarCard from './car-card'
 
 export function CarList () {
   return (
