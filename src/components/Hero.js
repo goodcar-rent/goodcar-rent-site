@@ -1,7 +1,7 @@
 import Link from 'gatsby-link'
 import * as PropTypes from 'prop-types'
 import React from 'react'
-import './Hero.css'
+import './hero.css'
 import logo from '../images/logo.svg'
 
 export function Hero () {
