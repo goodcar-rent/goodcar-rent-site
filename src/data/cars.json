@@ -1,51 +1,72 @@
 [
   {
-    "caption": "Hyundai Solaris new 1,6 AT",
+    "caption": "Hyundai Solaris 1,6 AT",
+    "icon": "solaris",
     "ribbon": "new",
     "engine": "1.6",
     "fuel": "gas",
-    "transmission": "AT"
+    "transmission": "AT",
+    "baggage": 3,
+    "people": 5
   },
   {
     "caption": "Kia Rio new 1,6 AT",
+    "icon": "rio",
     "ribbon": "new",
     "engine": "1.6",
     "fuel": "gas",
-    "transmission": "AT"
+    "transmission": "AT",
+    "baggage": 3,
+    "people": 5
   },
   {
     "caption": "Hyundai Accent 1,6 AT",
+    "icon": "logan",
     "ribbon": "",
     "engine": "1.6",
     "fuel": "gas",
-    "transmission": "AT"
+    "transmission": "AT",
+    "baggage": 3,
+    "people": 5
   },
   {
     "caption": "Kia Spectra 1,5 MT",
+    "icon": "logan",
     "ribbon": "",
     "engine": "1.5",
     "fuel": "gas",
-    "transmission": "MT"
+    "transmission": "MT",
+    "baggage": 3,
+    "people": 5
   },
   {
     "caption": "Chevrolet Lacetti 1,6 MT",
+    "icon": "logan",
     "ribbon": "",
     "engine": "1.6",
     "fuel": "gas",
-    "transmission": "MT"
+    "transmission": "MT",
+    "baggage": 3,
+    "people": 5
   },
   {
     "caption": "Daewoo Nexia 1,5 MT",
+    "icon": "logan",
     "ribbon": "",
     "engine": "1.5",
     "fuel": "gas",
-    "transmission": "MT"
+    "transmission": "MT",
+    "baggage": 3,
+    "people": 5
   },
   {
     "caption": "Hyundai Matrix 1,8",
+    "icon": "logan",
     "ribbon": "",
     "engine": "1.8",
     "fuel": "gas",
-    "transmission": "AT"
+    "transmission": "AT",
+    "baggage": 3,
+    "people": 5
   }
 ]

@@ -1,7 +1,9 @@
 import React from 'react'
-import './car-card.css'
-import Car from '../images/car.png'
 import PropTypes from 'prop-types'
+import './car-card.css'
+import Icon_Logan2018 from '../images/logan2018.png'
+import Icon_Solaris from '../images/hyundai-solaris-II.png'
+import Icon_Rio from '../images/kia-rio.png'
 
 const CarCard = props => {
 
@@ -14,7 +16,11 @@ const CarCard = props => {
 		<li className = { `offer_item ${props.ribbon === 'hit' ? 'offer_hit': ""} ` } >
 			{hitSpan}
 			<h3>{props.caption}</h3>
-			<img src={Car} alt="#"/>
+
+			{props.icon === 'logan' && <img src={Icon_Logan2018} alt="#"/> }
+			{props.icon === 'solaris' && <img src={Icon_Solaris} alt="#"/> }
+			{props.icon === 'rio' && <img src={Icon_Rio} alt="#"/> }
+
 			<div className="offers_description">
 				<p className="meta_item peoples">{props.people} чел</p>
 				<p className="meta_item baggage">{props.baggage} мест(а)</p>
@@ -32,7 +38,8 @@ CarCard.propTypes = {
   people: PropTypes.number.isRequired,
 	baggage: PropTypes.number.isRequired,
 	gear: PropTypes.oneOf(['AT','MT']).isRequired,
-	price: PropTypes.number.isRequired
+	price: PropTypes.number.isRequired,
+	icon: PropTypes.oneOf(['logan', 'solaris', 'rio'])
 }
 
 export default CarCard

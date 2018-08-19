@@ -1,23 +1,17 @@
 import React from 'react'
 import CarCard from './car-card'
+import Cars from '../data/cars.json'
 
 export function CarList () {
+  let ndx=0
   return (
     <div className="block100">
       <div className="wrapper">
         <div id="our_offers">
           <h2>Наши предложения</h2>
           <ul className="offers_list">
-            <CarCard caption="Renault Logan 2018" ribbon="hit" baggage={3} people={5} gear={"AT"} price={3000}/>
-            <CarCard />
-            <CarCard />
-            <CarCard />
-          </ul>
-          <ul className="offers_list">
-            <CarCard ribbon={"hit"} />
-            <CarCard />
-            <CarCard />
-            <CarCard />
+            {Cars.map( (item) => <CarCard key = { (ndx++).toString()} caption={item.caption} icon={item.icon} ribbon="" baggage={item.baggage}
+              people={item.people} gear={item.gear} price={item.price} />)}
           </ul>
         </div>
       </div>
