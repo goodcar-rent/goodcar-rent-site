@@ -8,7 +8,7 @@ export function CarList () {
         <div id="our_offers">
           <h2>Наши предложения</h2>
           <ul className="offers_list">
-            <CarCard ribbon={"hit"} />
+            <CarCard caption="Renault Logan 2018" ribbon="hit" baggage={3} people={5} gear={"AT"} price={3000}/>
             <CarCard />
             <CarCard />
             <CarCard />

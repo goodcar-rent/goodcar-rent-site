@@ -1,6 +1,7 @@
 import React from 'react'
 import './car-card.css'
 import Car from '../images/car.png'
+import PropTypes from 'prop-types'
 
 const CarCard = props => {
 
@@ -12,16 +13,26 @@ const CarCard = props => {
 	return (
 		<li className = { `offer_item ${props.ribbon === 'hit' ? 'offer_hit': ""} ` } >
 			{hitSpan}
-			<h3>Renault Logan 2018</h3>
+			<h3>{props.caption}</h3>
 			<img src={Car} alt="#"/>
 			<div className="offers_description">
-				<p className="meta_item peoples">4 чел.</p>
-				<p className="meta_item baggage">6 шт.</p>
-				<p className="meta_item gear">АКПП</p>
+				<p className="meta_item peoples">{props.people} чел</p>
+				<p className="meta_item baggage">{props.baggage} мест(а)</p>
+				<p className="meta_item gear">{props.gear === 'MT' ? "МКПП" : "АКПП"}</p>
 			</div>
-			<div className="price">от 3000 руб./сутки</div>
+			<div className="price">от {props.price} руб./сутки</div>
 			<a href="#" className="button" target="_self" title="Оставить заявку">Оставить заявку</a>
 		</li>
 	)
 }
+
+CarCard.propTypes = {
+	caption: PropTypes.string.isRequired,
+  ribbon: PropTypes.oneOf(['hit', '']).isRequired,
+  people: PropTypes.number.isRequired,
+	baggage: PropTypes.number.isRequired,
+	gear: PropTypes.oneOf(['AT','MT']).isRequired,
+	price: PropTypes.number.isRequired
+}
+
 export default CarCard
