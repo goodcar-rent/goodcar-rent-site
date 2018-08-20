@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './footer.css'
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div className="block100 black_block_000000">
       <div className="wrapper">
@@ -28,13 +29,18 @@ const Footer = () => {
           </div>
           <div className="foot_right">
             <div className="description">Появились вопросы? Звоните!</div>
-            <div className="phone"><a href="tel:+79876543210" target="_self" title="Позвонить">8 987 654-32-10</a></div>
+            <div className="phone"><a href={`tel:${props.tel}`} target="_self" title="Позвонить">{props.tel_formatted}</a></div>
             <a href="#" className="button" target="_self" title="Оставить заявку">Оставить заявку</a>
           </div>
         </div>
       </div>
     </div>
   )
+}
+
+Footer.propTypes = {
+  tel: PropTypes.string,
+  tel_formatted: PropTypes.string
 }
 
 export default Footer

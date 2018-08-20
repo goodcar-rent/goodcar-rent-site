@@ -66,8 +66,11 @@ export function Process () {
         </div>
       </div>
       <div className="block100">
-        <div id="map">
-        </div>
+        <div id="map"
+            dangerouslySetInnerHTML={{
+              __html: `<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4b5c92f9de852bcd3307de4659be1b3be9250fbf687ca462cfc8400d8193bd42&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>`
+            }}
+        />
       </div>
 
     </div>

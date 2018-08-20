@@ -17,7 +17,7 @@ const Layout = ({ children, data }) => (
     />
       {children()}
     <div />
-    <Footer />
+    <Footer tel={data.site.siteMetadata.tel} tel_formatted={data.site.siteMetadata.tel_formatted}/>
   </div>
 )
 
@@ -32,6 +32,8 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        tel
+        tel_formatted
       }
     }
   }
