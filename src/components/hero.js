@@ -1,10 +1,10 @@
 import Link from 'gatsby-link'
-import * as PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import React from 'react'
 import './hero.css'
 import logo from '../images/logo.svg'
 
-export function Hero () {
+export function Hero (props) {
   return (
     <div>
       <div className="block100 black_block_000000 black_shadow_block">
@@ -17,7 +17,7 @@ export function Hero () {
             </div>
             <div className="top_line_right">
               <div className="description">Появились вопросы? Звоните!</div>
-              <div className="phone"><a href="tel:+79876543210" target="_self" title="Позвонить">8 987 654-32-10</a></div>
+              <div className="phone"><a href={`tel:${props.tel}`} target="_self" title="Позвонить">{props.tel_formatted ? props.tel_formatted : props.tel}</a></div>
             </div>
           </div>
         </div>
@@ -38,4 +38,9 @@ export function Hero () {
       </div>
     </div>
   )
+}
+
+Hero.propTypes = {
+	tel: PropTypes.string,
+	tel_formatted: PropTypes.string,
 }

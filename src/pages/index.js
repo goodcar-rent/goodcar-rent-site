@@ -5,9 +5,9 @@ import { ServiceList } from '../components/service-list'
 import { Process } from '../components/process'
 import { Order } from '../components/order'
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <div>
-    <Hero/>
+    <Hero tel={data.site.siteMetadata.tel} tel_formatted={data.site.siteMetadata.tel_formatted} />
     <CarList/>
     <ServiceList/>
     <Process/>
@@ -15,4 +15,15 @@ const IndexPage = () => (
   </div>
 )
 
+export const query = graphql`
+  query IndexQuery {
+    site {
+      siteMetadata {
+        title
+        tel
+        tel_formatted
+      }
+    }
+  }
+`
 export default IndexPage
