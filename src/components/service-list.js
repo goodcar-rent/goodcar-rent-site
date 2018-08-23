@@ -32,8 +32,7 @@ export function ServiceList () {
             <li className="advantage_item">
               <img src={advantage_item_4} alt="#"/>
               <p className="head_text">Быстрое оформление документов</p>
-              <p className="description">Не следует, однако забывать, что сложившаяся структура организации позволяет
-                выполнять важные задания.</p>
+              <p className="description">Заказать и получить машину быстро и легко - по двум документам. Оформление договора меньше 10 минут</p>
             </li>
           </ul>
           <a href="#" className="button" target="_self" title="Оставить заявку">Оставить заявку</a>

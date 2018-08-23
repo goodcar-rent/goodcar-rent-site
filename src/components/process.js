@@ -1,6 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export function Process () {
+export function Process (props) {
+  const tel_formatted = props.tel_formatted ? props.tel_formatted : props.tel
+
   return (
     <div>
       <div className="block100">
@@ -9,27 +12,20 @@ export function Process () {
             <h2>Наши контакты</h2>
             <div className="left_contacts">
               <h3>Контактная информация</h3>
-              <p className="row"><strong>Наш адрес:</strong> Россия, 630099, г. Новосибирск, ул. Ленина, д. 1, к. 1,
-                офис 111</p>
-              <p className="row"><strong>Наш телефон:</strong> <a href="tel:+79876543210" target="_self"
-                                                                  title="Позвонить">8 987 654-32-10</a></p>
-              <p className="row"><strong>Наш e-mail:</strong> <a href="mailto:info@GoodCar.rent" target="_self"
-                                                                 title="Написать">info@GoodCar.rent</a></p>
-              <p className="row"><strong>Skype:</strong> GoodCar.rent</p>
-              <p className="row"><strong>Время работы:</strong> Ежедневно с 10:00 до 20:00 (без обеда и выходных)</p>
+              <p className="row"><strong>Офис: </strong> г. Новосибирск, ул. Фабричная 10, офис 213</p>
+              <p className="row"><strong>Наш телефон: </strong> <a href={`tel:${props.tel}`} target="_self"
+                                                                  title="Позвонить">{tel_formatted}</a> (WhatsApp, Telegram, Viber)</p>
+              <p className="row"><strong>Наш e-mail: </strong> <a href={`mailto:${props.email}`} target="_self"
+                                                                 title="Написать">{props.email}</a></p>
+              <p className="row"><strong>Офис работает: </strong>Будние дни с 09:00 – 18:00, <strong>суббота</strong> с 10:00 до 15:00, а в остальное время мы ждем ваших обращений по телефону или почте!</p>
               <div className="social_buttons_list">
-                <a href="#" className="social_button vkontakte" target="_blank" title="Вконтакте" rel="nofollow"></a>
-                <a href="#" className="social_button odnoklassniki" target="_blank" title="Одноклассники"
-                   rel="nofollow"></a>
-                <a href="#" className="social_button facebook" target="_blank" title="Facebook" rel="nofollow"></a>
-                <a href="#" className="social_button twitter" target="_blank" title="Twitter" rel="nofollow"></a>
-                <a href="#" className="social_button instagram" target="_blank" title="Instagram" rel="nofollow"></a>
-                <a href="#" className="social_button googleplus" target="_blank" title="Google+" rel="nofollow"></a>
-                <a href="#" className="social_button youtube" target="_blank" title="YouTube" rel="nofollow"></a>
+                <a href={props.social_vk} className="social_button vkontakte" target="_blank" title="Вконтакте" rel="nofollow"></a>
+                <a href={props.social_fb} className="social_button facebook" target="_blank" title="Facebook" rel="nofollow"></a>
+                <a href={props.social_ig} className="social_button instagram" target="_blank" title="Instagram" rel="nofollow"></a>
               </div>
             </div>
             <div className="right_contacts">
-              <h3>Отправить сообщение</h3>
+              <h3 шв="">Отправить заявку</h3>
               <form name="feedback" method="post" action="#">
                 <label className="row50">
                   <p>Ваше имя:</p>
@@ -39,7 +35,7 @@ export function Process () {
                 <label className="row50">
                   <p>Ваш e-mail:</p>
                   <input type="text" id="mail" name="mail" className="text_form mail"
-                         placeholder="Например: your@mail.ru"/>
+                         placeholder="Например: your@email.ru"/>
                 </label>
                 <label className="row50">
                   <p>Ваш телефон:</p>
@@ -47,12 +43,12 @@ export function Process () {
                          placeholder="Например: +79876543210"/>
                 </label>
                 <label className="row50">
-                  <p>Тема обращения:</p>
+                  <p>Автомобиль:</p>
                   <select size="1" className="text_form subject" name="subject">
-                    <option selected disabled>- Выберите -</option>
-                    <option value="Пункт 1">Пункт 1</option>
-                    <option value="Пункт 2">Пункт 2</option>
-                    <option value="Пункт 3">Пункт 3</option>
+                    <option selected disabled>- Выберите из списка: -</option>
+                    <option value="solaris">Hyundai Solaris</option>
+                    <option value="rio">Kia Rio</option>
+                    <option value="other">(другой - указан в сообщении)</option>
                   </select>
                 </label>
                 <label className="row100">
@@ -75,4 +71,13 @@ export function Process () {
 
     </div>
   )
+}
+
+Process.propTypes = {
+	tel: PropTypes.string,
+	tel_formatted: PropTypes.string,
+  email: PropTypes.string,
+  social_vk: PropTypes.string,
+  social_fb: PropTypes.string,
+  social_ig: PropTypes.string
 }

@@ -17,19 +17,14 @@ const Footer = (props) => {
           </div>
           <div className="foot_center">
             <div className="social_buttons_list">
-              <a href="#" className="social_button vkontakte" target="_blank" title="Вконтакте" rel="nofollow"></a>
-              <a href="#" className="social_button odnoklassniki" target="_blank" title="Одноклассники"
-                 rel="nofollow"></a>
-              <a href="#" className="social_button facebook" target="_blank" title="Facebook" rel="nofollow"></a>
-              <a href="#" className="social_button twitter" target="_blank" title="Twitter" rel="nofollow"></a>
-              <a href="#" className="social_button instagram" target="_blank" title="Instagram" rel="nofollow"></a>
-              <a href="#" className="social_button googleplus" target="_blank" title="Google+" rel="nofollow"></a>
-              <a href="#" className="social_button youtube" target="_blank" title="YouTube" rel="nofollow"></a>
+                <a href={props.social_vk} className="social_button vkontakte" target="_blank" title="Вконтакте" rel="nofollow"></a>
+                <a href={props.social_fb} className="social_button facebook" target="_blank" title="Facebook" rel="nofollow"></a>
+                <a href={props.social_ig} className="social_button instagram" target="_blank" title="Instagram" rel="nofollow"></a>
             </div>
           </div>
           <div className="foot_right">
             <div className="description">Появились вопросы? Звоните!</div>
-            <div className="phone"><a href={`tel:${props.tel}`} target="_self" title="Позвонить">{props.tel_formatted}</a></div>
+            <div className="phone"><a href={`tel:${props.tel}`} target="_self" title="Позвонить">{props.tel_formatted?props.tel_formatted:props.tel}</a></div>
             <a href="#" className="button" target="_self" title="Оставить заявку">Оставить заявку</a>
           </div>
         </div>
@@ -39,8 +34,12 @@ const Footer = (props) => {
 }
 
 Footer.propTypes = {
-  tel: PropTypes.string,
-  tel_formatted: PropTypes.string
+	tel: PropTypes.string,
+	tel_formatted: PropTypes.string,
+  email: PropTypes.string,
+  social_vk: PropTypes.string,
+  social_fb: PropTypes.string,
+  social_ig: PropTypes.string
 }
 
 export default Footer
