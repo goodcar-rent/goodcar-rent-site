@@ -14,20 +14,17 @@ export function ServiceList () {
             <li className="advantage_item">
               <img src={advantage_item_1} alt="#"/>
               <p className="head_text">Большой парк автомобилей</p>
-              <p className="description">Не следует, однако забывать, что сложившаяся структура организации позволяет
-                выполнять важные задания.</p>
+              <p className="description">Разумные цены. Техническая поддержка 24 часа!</p>
             </li>
             <li className="advantage_item">
               <img src={advantage_item_2} alt="#"/>
-              <p className="head_text">Низкие цены, доступные каждому</p>
-              <p className="description">Не следует, однако забывать, что сложившаяся структура организации позволяет
-                выполнять важные задания.</p>
+              <p className="head_text">Дополнительные услуги</p>
+              <p className="description">Доставка автомобиля по адресу клиента. Возможность безлимитного пробега! Возможность любого дополнительного страхования.</p>
             </li>
             <li className="advantage_item">
               <img src={advantage_item_3} alt="#"/>
               <p className="head_text">Чистые и ухоженные автомобили</p>
-              <p className="description">Не следует, однако забывать, что сложившаяся структура организации позволяет
-                выполнять важные задания.</p>
+              <p className="description">Всегда чистые и заправленные автомобили.</p>
             </li>
             <li className="advantage_item">
               <img src={advantage_item_4} alt="#"/>
