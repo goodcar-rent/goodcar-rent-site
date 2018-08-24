@@ -4,6 +4,7 @@ import { CarList } from '../components/car-list'
 import { ServiceList } from '../components/service-list'
 import { Process } from '../components/process'
 import { Order } from '../components/order'
+import Cars from '../data/cars.json'
 
 const IndexPage = ({data}) => (
   <div>
@@ -17,8 +18,9 @@ const IndexPage = ({data}) => (
       social_fb={data.site.siteMetadata.social_fb}
       social_vk={data.site.siteMetadata.social_vk}
       social_ig={data.site.siteMetadata.social_ig}
+      cars={Cars}
     />
-    <Order/>
+    <Order />
   </div>
 )
 

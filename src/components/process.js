@@ -26,7 +26,7 @@ export function Process (props) {
             </div>
             <div className="right_contacts">
               <h3 шв="">Отправить заявку</h3>
-              <form name="feedback" method="post" action="#">
+              <form name="carOrder" method="post" netlify>
                 <label className="row50">
                   <p>Ваше имя:</p>
                   <input type="text" id="name" name="name" className="text_form name"
@@ -78,5 +78,6 @@ Process.propTypes = {
   email: PropTypes.string,
   social_vk: PropTypes.string,
   social_fb: PropTypes.string,
-  social_ig: PropTypes.string
+  social_ig: PropTypes.string,
+  cars: PropTypes.arrayOf(PropTypes.object)
 }
