@@ -26,7 +26,7 @@ export function Process (props) {
             </div>
             <div className="right_contacts">
               <h3>Отправить заявку</h3>
-              <form name="carOrder" method="post" netlify>
+              <form name="car-order" method="post" netlify>
                 <label className="row50">
                   <p>Ваше имя:</p>
                   <input type="text" id="name" name="name" className="text_form name"
@@ -34,7 +34,7 @@ export function Process (props) {
                 </label>
                 <label className="row50">
                   <p>Ваш e-mail:</p>
-                  <input type="text" id="mail" name="mail" className="text_form mail"
+                  <input type="text" id="email" name="email" className="text_form mail"
                          placeholder="Например: your@email.ru"/>
                 </label>
                 <label className="row50">
@@ -44,7 +44,7 @@ export function Process (props) {
                 </label>
                 <label className="row50">
                   <p>Автомобиль:</p>
-                  <select size="1" className="text_form subject" name="subject">
+                  <select size="1" className="text_form subject" name="auto">
                     <option selected disabled>- Выберите из списка: -</option>
                     <option value="solaris">Hyundai Solaris</option>
                     <option value="rio">Kia Rio</option>
@@ -55,7 +55,7 @@ export function Process (props) {
                   <p>Ваше сообщение:</p>
                   <textarea className="text_form message" name="message"></textarea>
                 </label>
-                <input className="button" type="submit" value="Отправить сообщение"/>
+                <button className="button" type="submit">Отправить сообщение</button>
               </form>
             </div>
           </div>
