@@ -29,7 +29,7 @@ export function Hero (props) {
             <p className="big_text">Аренда автомобилей в Новосибирске</p>
             <p className="small_text">Быстро, выгодно и по низким ценам!</p>
             <a
-              href = "#"
+              href = "#formOrder"
               className = "button"
               target = "_self"
               title = "Оставить заявку" >Оставить заявку</a>

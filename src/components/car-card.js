@@ -27,7 +27,7 @@ const CarCard = props => {
 				<p className="meta_item gear">{props.gear === 'MT' ? "МКПП - 'механика'" : "АКПП - 'автомат'"}</p>
 			</div>
 			<div className="price">от {props.price} руб./сутки</div>
-			<a href="#" className="button" target="_self" title="Оставить заявку">Оставить заявку</a>
+			<a href="#formOrder" className="button" target="_self" title="Оставить заявку">Оставить заявку</a>
 		</li>
 	)
 }
