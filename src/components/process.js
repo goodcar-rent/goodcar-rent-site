@@ -26,7 +26,7 @@ export function Process (props) {
             </div>
             <div className="right_contacts">
               <h3 id='formOrder'>Отправить заявку</h3>
-              <form name="order" method="POST" netlify>
+              <form name="order" method="POST" data-netlify="true">
                 <label className="row50">
                   <p>Ваше имя:</p>
                   <input type="text" id="name" name="name" className="text_form name"
