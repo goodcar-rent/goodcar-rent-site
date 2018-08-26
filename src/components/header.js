@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import logo from '../images/logo-designcode.svg';
 import './header.css'
 
 class Header extends React.Component {

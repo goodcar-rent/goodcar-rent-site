@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/header'
 import './index.css'
 import Footer from '../components/footer'
 
@@ -17,7 +16,14 @@ const Layout = ({ children, data }) => (
     />
       {children()}
     <div />
-    <Footer />
+    <Footer
+      tel={data.site.siteMetadata.tel}
+      tel_formatted={data.site.siteMetadata.tel_formatted}
+      email={data.site.siteMetadata.email}
+      social_fb={data.site.siteMetadata.social_fb}
+      social_vk={data.site.siteMetadata.social_vk}
+      social_ig={data.site.siteMetadata.social_ig}
+    />
   </div>
 )
 
@@ -32,6 +38,12 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        tel
+        tel_formatted
+        email
+        social_vk
+        social_fb
+        social_ig
       }
     }
   }

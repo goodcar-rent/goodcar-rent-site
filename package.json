@@ -8,6 +8,7 @@
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-typography": "^1.7.19",
+    "prop-types": "^15.6.2",
     "react-helmet": "^5.2.0",
     "typography": "^0.16.17",
     "typography-theme-de-young": "^0.16.9",
