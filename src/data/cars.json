@@ -1,6 +1,6 @@
 [
   {
-    "caption": "Hyundai Solaris 1,6AT",
+    "caption": "Hyundai Solaris 1.6AT",
     "icon": "solaris",
     "ribbon": "new",
     "engine": "1.6",
@@ -11,7 +11,7 @@
     "price": 1800
   },
   {
-    "caption": "Kia Rio(new) 1,6AT",
+    "caption": "Kia Rio(new) 1.6AT",
     "icon": "rio",
     "ribbon": "new",
     "engine": "1.6",
@@ -22,8 +22,8 @@
     "price": 1800
   },
   {
-    "caption": "Hyundai Accent 1,6AT",
-    "icon": "logan",
+    "caption": "Hyundai Accent 1.6AT",
+    "icon": "accent",
     "ribbon": "",
     "engine": "1.6",
     "fuel": "gas",
@@ -33,8 +33,8 @@
     "price": 1000
   },
   {
-    "caption": "Kia Spectra 1,5MT",
-    "icon": "logan",
+    "caption": "Kia Spectra 1.5MT",
+    "icon": "spectra",
     "ribbon": "",
     "engine": "1.5",
     "fuel": "gas",
@@ -44,8 +44,8 @@
     "price": 1000
   },
   {
-    "caption": "Chevrolet Lacetti 1,6MT",
-    "icon": "logan",
+    "caption": "Chevrolet Lacetti 1.6MT",
+    "icon": "lacetti",
     "ribbon": "",
     "engine": "1.6",
     "fuel": "gas",
@@ -55,8 +55,8 @@
     "price": 1000
   },
   {
-    "caption": "Daewoo Nexia 1,5MT",
-    "icon": "logan",
+    "caption": "Daewoo Nexia 1.5MT",
+    "icon": "nexia",
     "ribbon": "",
     "engine": "1.5",
     "fuel": "gas",
@@ -66,8 +66,8 @@
     "price": 900
   },
   {
-    "caption": "Hyundai Matrix 1,8AT",
-    "icon": "logan",
+    "caption": "Hyundai Matrix 1.8AT",
+    "icon": "matrix",
     "ribbon": "",
     "engine": "1.8",
     "fuel": "gas",
