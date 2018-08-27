@@ -1,9 +1,36 @@
 #top_line {clear:both; float:left; margin:0; padding:30px 0; position:relative; width:100%; z-index:99;}
 #top_line .top_line_left {float:left; margin:10px 0 0 0; padding:0; position:relative; text-align:left; width:500px;}
-#top_line .top_line_left a {clear:both; float:left; margin:0; padding:0; position:relative; text-decoration:none !important;}
+
+#top_line .top_line_left a {
+    clear:both; float:left; margin:0; padding:0; position:relative; text-decoration:none;
+}
+
+#top_line .top_line_left a:hover {
+    box-shadow: none;
+}
+
 #top_line .top_line_left a img {clear:both; float:left; margin:0; padding:0; position:relative;}
 #top_line .top_line_right {float:left; margin:0; padding:0; position:relative; text-align:right; width:500px;}
 #top_line .top_line_right .description {clear:both; float:right; font-family:Lato-Regular; font-size:16px; line-height:22px; margin:0 0 10px 0; padding:0; position:relative; text-align:right;}
-#top_line .top_line_right .phone {clear:both; float:right; margin:0 0 15px 0; padding:0; position:relative; text-align:right;}
-#top_line .top_line_right .phone a {clear:both; float:right; font-family:Lato-Bold; font-size:30px; line-height:36px; margin:0; padding:0; position:relative; text-align:right;}
-#top_line .top_line_right .phone a::before {background-color:; background-image:url('../images/phone-30x30.png'); background-position:0 0; background-repeat:no-repeat; background-size:30px 30px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:30px; margin:0 10px 0 0; outline:none; position:relative; top:0px; width:30px;}
+
+#top_line .top_line_right .phone {
+    clear:both; float:right; margin:0 0 15px 0; padding:0; position:relative; text-align:right; outline: none;
+    text-decoration: none;
+
+}
+
+#top_line .top_line_right .phone a {
+    clear:both; float:right; font-family:Lato-Bold; font-size:30px; line-height:36px; margin:0; padding:0; position:relative;
+    text-align:right; outline: none; text-decoration: none;
+}
+
+#top_line .top_line_right .phone a:hover {
+    box-shadow: none; text-decoration: underline;
+}
+
+#top_line .top_line_right .phone a::before
+  {
+    background-color:; background-image:url('../images/phone-30x30.png'); background-position:0 0; background-repeat:no-repeat;
+    background-size:30px 30px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:30px;
+    margin:0 10px 0 0; outline:none; position:relative; top:0px; width:30px;
+  }
