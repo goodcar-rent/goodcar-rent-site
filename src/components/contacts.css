@@ -1,0 +1,27 @@
+#our_contacts {clear:both; float:left; margin:0; padding:40px 0; position:relative; width:100%;}
+#our_contacts h2 {clear:both; float:left; font-family:Lato-Bold; font-size:50px; line-height:56px; margin:0 0 40px 0; padding:0; position:relative; text-align:center; width:100%;}
+#our_contacts .left_contacts {float:left; margin:0 20px 0 0; padding:0; position:relative; width:480px;}
+#our_contacts .left_contacts h3 {clear:both; float:left; font-family:Lato-Bold; font-size:30px; line-height:36px; margin:0 0 30px 0; padding:0; position:relative; width:100%;}
+#our_contacts .left_contacts .row {clear:both; float:left; font-family:Lato-Regular; font-size:18px; line-height:24px; margin:0 0 10px 0; padding:0; position:relative; width:100%;}
+#our_contacts .left_contacts .social_buttons_list {clear:both; float:left; margin:10px 0 0 0; padding:0; position:relative;}
+#our_contacts .left_contacts .social_buttons_list a {display:inline-block; height:24px; margin:0; position:relative; text-decoration:none !important; width:24px;}
+#our_contacts .left_contacts .social_buttons_list a:last-child {margin:0;}
+#our_contacts .left_contacts .social_buttons_list a.vkontakte {background:url('../images/social-sprites-24x24.png') no-repeat 0 0;}
+#our_contacts .left_contacts .social_buttons_list a.odnoklassniki {background:url('../images/social-sprites-24x24.png') no-repeat -24px 0;}
+#our_contacts .left_contacts .social_buttons_list a.facebook {background:url('../images/social-sprites-24x24.png') no-repeat -48px 0;}
+#our_contacts .left_contacts .social_buttons_list a.twitter {background:url('../images/social-sprites-24x24.png') no-repeat -72px 0;}
+#our_contacts .left_contacts .social_buttons_list a.instagram {background:url('../images/social-sprites-24x24.png') no-repeat -96px 0;}
+#our_contacts .left_contacts .social_buttons_list a.googleplus {background:url('../images/social-sprites-24x24.png') no-repeat -120px 0;}
+#our_contacts .left_contacts .social_buttons_list a.youtube {background:url('../images/social-sprites-24x24.png') no-repeat -144px 0;}
+#our_contacts .left_contacts .social_buttons_list a.telegram {background:url('../images/social-sprites-24x24.png') no-repeat -168px 0;}
+#our_contacts .left_contacts .social_buttons_list a.skype {background:url('../images/social-sprites-24x24.png') no-repeat -192px 0;}
+#our_contacts .right_contacts {border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px; box-shadow:0 0 30px rgba(0, 0, 0, 0.2); display:inline-block; float:left; margin:0 0 0 20px; padding:20px; position:relative; width:480px;}
+#our_contacts .right_contacts h3 {clear:both; float:left; font-family:Lato-Bold; font-size:30px; line-height:36px; margin:0 0 30px 0; padding:0; position:relative; text-align:center; width:100%;}
+#our_contacts .right_contacts form {clear:both; float:left; margin:0; padding:0; position:relative; width:100%;}
+#our_contacts .right_contacts form .row50 {float:left; margin:0 0 20px 0; padding:0; position:relative; width:220px;}
+#our_contacts .right_contacts form .row50 p {clear:both; float:left; font-family:Lato-Regular; font-size:14px; line-height:20px; margin:0 0 5px 0; padding:0; position:relative; width:220px;}
+#our_contacts .right_contacts form .row50 .text_form {clear:both; float:left; font-size:14px; height:40px; line-height:20px; margin:0; padding:10px; position:relative; width:200px;}
+#our_contacts .right_contacts form .row100 {float:left; margin:0 0 20px 0; padding:0; position:relative; width:440px;}
+#our_contacts .right_contacts form .row100 p {clear:both; float:left; font-size:14px; line-height:20px; margin:0 0 5px 0; padding:0; position:relative; width:440px;}
+#our_contacts .right_contacts form .row100 .text_form {clear:both; float:left; font-size:14px; height:100px; line-height:20px; margin:0 0 5px 0; padding:10px; position:relative; width:440px;}
+#our_contacts .right_contacts form .button {clear:both; display:inline-block; font-family:Lato-Medium; font-size:24px; line-height:30px; margin:0; padding:15px 0; width:440px;}

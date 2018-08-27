@@ -1,44 +1,30 @@
-import React from 'react'
 import Link from 'gatsby-link'
-import logo from '../images/logo-designcode.svg';
+import PropTypes from 'prop-types'
+import React from 'react'
 import './header.css'
+import logo from '../images/logo.svg'
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      hasScrolled: false
-    }
-  }
-
-  componentDidMount() {
-  	window.addEventListener('scroll', this.handleScroll)
-  }
-
-  handleScroll = (event) => {
-    const scrollTop = window.pageYOffset
-
-    if (scrollTop > 50) {
-	    this.setState({ hasScrolled: true })
-    } else {
-	    this.setState({ hasScrolled: false })
-    }
-  }
-
-  render() {
-	  return (
-	    <div className={ this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header' }>
-        <div className="HeaderGroup">
-          <Link to="/"><b>GoodCar.rent</b></Link>
-          <span />
-          <Link to="/#autos">Autos</Link>
-          <Link to="/#buy"><button>Rent!</button></Link>
+export function Header (props) {
+  return (
+    <div className="block100 black_block_000000 black_shadow_block">
+      <div className="wrapper">
+        <div id="top_line">
+          <div className="top_line_left">
+            <a href="./" target="_self" title="#">
+              <img src={logo} style={{ width: '400px'}} alt="#"/>
+            </a>
+          </div>
+          <div className="top_line_right">
+            <div className="description">Появились вопросы? Звоните!</div>
+            <div className="phone"><a href={`tel:${props.tel}`} target="_self" title="Позвонить">{props.tel_formatted ? props.tel_formatted : props.tel}</a></div>
+          </div>
         </div>
       </div>
-    )
-  }
-
+    </div>
+  )
 }
 
-export default Header
-
+Header.propTypes = {
+	tel: PropTypes.string,
+	tel_formatted: PropTypes.string,
+}

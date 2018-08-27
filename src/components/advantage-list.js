@@ -1,10 +1,11 @@
 import React from 'react'
+import './advantage-list.css'
 import advantage_item_1 from '../images/advantage_item_1.png'
 import advantage_item_2 from '../images/advantage_item_2.png'
 import advantage_item_3 from '../images/advantage_item_3.png'
 import advantage_item_4 from '../images/advantage_item_4.png'
 
-export function ServiceList () {
+export function AdvantageList () {
   return (
     <div className="block100 black_block_000000">
       <div className="wrapper">

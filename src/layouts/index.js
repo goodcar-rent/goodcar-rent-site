@@ -10,8 +10,8 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Аренда машин в Новосибирске, прокат автомобилей без водителя, посуточная аренда' },
+        { name: 'keywords', content: 'аренда, прокат, авто, автомобиль, машина, аренда авто, аренда автомобиля, посуточная пренда, прокат авто, прокат автомобиля' },
       ]}
     />
       {children()}

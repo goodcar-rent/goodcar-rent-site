@@ -1,17 +1,19 @@
 import React from 'react'
+import { Header } from '../components/header'
 import { Hero } from '../components/hero'
 import { CarList } from '../components/car-list'
-import { ServiceList } from '../components/service-list'
-import { Process } from '../components/process'
-import { Order } from '../components/order'
+import { AdvantageList } from '../components/advantage-list'
+import { Contacts } from '../components/contacts'
+import { Map } from '../components/map'
 import Cars from '../data/cars.json'
 
 const IndexPage = ({data}) => (
   <div>
+    <Header tel={data.site.siteMetadata.tel} tel_formatted={data.site.siteMetadata.tel_formatted} />
     <Hero tel={data.site.siteMetadata.tel} tel_formatted={data.site.siteMetadata.tel_formatted} />
     <CarList/>
-    <ServiceList/>
-    <Process
+    <AdvantageList/>
+    <Contacts
       tel={data.site.siteMetadata.tel}
       tel_formatted={data.site.siteMetadata.tel_formatted}
       email={data.site.siteMetadata.email}
@@ -20,7 +22,7 @@ const IndexPage = ({data}) => (
       social_ig={data.site.siteMetadata.social_ig}
       cars={Cars}
     />
-    <Order />
+    <Map />
   </div>
 )
 
