@@ -3,3 +3,10 @@
 #slider_wrapper .big_text {clear:both; float:left; font-family:Lato-Bold; font-size:50px; line-height:56px; margin:0 0 20px 0; padding:0; position:relative; width:600px;}
 #slider_wrapper .small_text {clear:both; float:left; font-family:Lato-Light; font-size:40px; line-height:46px; margin:0 0 40px 0; padding:0; position:relative; width:600px;}
 #slider_wrapper .button {clear:both; float:left; font-family:Lato-Medium; font-size:24px; line-height:30px; margin:0; padding:20px 50px;}
+
+@media all and (max-width: 1000px) {
+  #slider_wrapper .big_text {font-size:30px; line-height:26px; padding-left: 10vw; margin:0 0 20px 0; width: 80vw; height: auto; text-wrap: normal;}
+  #slider_wrapper .small_text {font-size:22px; line-height:26px; padding-left: 10vw; margin:0 0 10px 0; width:80%;}
+  #slider_wrapper .button {font-size:20px; line-height:26px; padding-left: 10vw; }
+
+}
