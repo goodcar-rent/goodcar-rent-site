@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import './contacts.css'
 
 export function Contacts (props) {
-  const tel_formatted = props.tel_formatted ? props.tel_formatted : props.tel
+  const tel_formatted = props.siteMeta.tel_formatted ? props.siteMeta.tel_formatted : props.siteMeta.tel
 
   return (
     <div>
@@ -14,15 +14,15 @@ export function Contacts (props) {
             <div className="left_contacts">
               <h3>Контактная информация</h3>
               <p className="row"><strong>Офис: </strong> г. Новосибирск, ул. Фабричная 10, офис 213</p>
-              <p className="row"><strong>Наш телефон: </strong> <a href={`tel:${props.tel}`} target="_self"
+              <p className="row"><strong>Наш телефон: </strong> <a href={`tel:${props.siteMeta.tel}`} target="_self"
                                                                   title="Позвонить">{tel_formatted}</a> (WhatsApp, Telegram, Viber)</p>
-              <p className="row"><strong>Наш e-mail: </strong> <a href={`mailto:${props.email}`} target="_self"
-                                                                 title="Написать">{props.email}</a></p>
+              <p className="row"><strong>Наш e-mail: </strong> <a href={`mailto:${props.siteMeta.email}`} target="_self"
+                                                                 title="Написать">{props.siteMeta.email}</a></p>
               <p className="row"><strong>Офис работает: </strong>Будние дни с 09:00 – 18:00, <strong>суббота</strong> с 10:00 до 15:00, а в остальное время мы ждем ваших обращений по телефону или почте!</p>
               <div className="social_buttons_list">
-                <a href={props.social_vk} className="social_button vkontakte" target="_blank" title="Вконтакте" rel="nofollow"></a>
-                <a href={props.social_fb} className="social_button facebook" target="_blank" title="Facebook" rel="nofollow"></a>
-                <a href={props.social_ig} className="social_button instagram" target="_blank" title="Instagram" rel="nofollow"></a>
+                <a href={props.siteMeta.social_vk} className="social_button vkontakte" target="_blank" title="Вконтакте" rel="nofollow"></a>
+                <a href={props.siteMeta.social_fb} className="social_button facebook" target="_blank" title="Facebook" rel="nofollow"></a>
+                <a href={props.siteMeta.social_ig} className="social_button instagram" target="_blank" title="Instagram" rel="nofollow"></a>
               </div>
             </div>
             <div className="right_contacts">
@@ -68,11 +68,13 @@ export function Contacts (props) {
 }
 
 Contacts.propTypes = {
-	tel: PropTypes.string,
-	tel_formatted: PropTypes.string,
-  email: PropTypes.string,
-  social_vk: PropTypes.string,
-  social_fb: PropTypes.string,
-  social_ig: PropTypes.string,
-  cars: PropTypes.arrayOf(PropTypes.object)
+  siteMeta: PropTypes.shape({
+    tel: PropTypes.string,
+    tel_formatted: PropTypes.string,
+    email: PropTypes.string,
+    social_vk: PropTypes.string,
+    social_fb: PropTypes.string,
+    social_ig: PropTypes.string,
+    cars: PropTypes.arrayOf(PropTypes.object)
+  })
 }

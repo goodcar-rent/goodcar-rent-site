@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import './hero.css'
 
-export function Hero (props) {
+export function Hero () {
   return (
     <div className= "block100 slider">
       <div className= "wrapper">
@@ -19,9 +19,4 @@ export function Hero (props) {
       </div>
     </div>
   )
-}
-
-Hero.propTypes = {
-	tel: PropTypes.string,
-	tel_formatted: PropTypes.string,
 }

@@ -16,7 +16,14 @@ export function Header (props) {
           </div>
           <div className="top_line_right">
             <div className="description">Появились вопросы? Звоните!</div>
-            <div className="phone"><a href={`tel:${props.tel}`} target="_self" title="Позвонить">{props.tel_formatted ? props.tel_formatted : props.tel}</a></div>
+            <div className="phone">
+              <a
+                href={`tel:${props.siteMeta.tel}`}
+                target="_self"
+                title="Позвонить">
+                {props.siteMeta.tel_formatted ? props.siteMeta.tel_formatted : props.tel}
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -25,6 +32,8 @@ export function Header (props) {
 }
 
 Header.propTypes = {
-	tel: PropTypes.string,
-	tel_formatted: PropTypes.string,
+  siteMeta: PropTypes.shape({
+    tel: PropTypes.string,
+    tel_formatted: PropTypes.string,
+  })
 }
