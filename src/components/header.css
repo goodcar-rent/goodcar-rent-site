@@ -1,3 +1,4 @@
+
 #top_line {
     clear:both; float:left; margin:0; padding:30px 0; position:relative; width:100%; z-index:99;
 }
@@ -18,14 +19,21 @@
 #top_line .top_line_right {
     float:left; margin:0; padding:0; position:relative; text-align:right; width:50%; max-width: 50%;
 }
-#top_line .top_line_right .description {clear:both; float:right; font-family:Lato-Regular; font-size:16px; line-height:22px; margin:0 0 10px 0; padding:0; position:relative; text-align:right;}
+#top_line .top_line_right .description {
+    clear:both; float:right;
+    font-family:Lato-Regular;
+    font-size: 22px; line-height: 32px;
+    margin:0 0 10px 0; padding:0; position:relative; text-align:right;}
 
 #top_line .top_line_right .phone {
     clear:both; float:right; margin:0 0 15px 0; padding:0; position:relative; text-align:right; outline: none;
     text-decoration: none;
 }
 #top_line .top_line_right .phone a {
-    clear:both; float:right; font-family:Lato-Bold; font-size:30px; line-height:36px; margin:0; padding:0; position:relative;
+    clear:both; float:right;
+    font-family:Lato-Bold;
+    font-size: 32px; line-height: 36px;
+    margin:0; padding:0; position: relative;
     text-align:right; outline: none; text-decoration: none;
 }
 #top_line .top_line_right .phone a:hover {
@@ -40,44 +48,47 @@
 
 @media all and (max-width: 1000px) {
     #top_line {
-        padding: 10px;
+        width: 100vw;
+        padding: 5px 5px;
     }
     #top_line .top_line_left {
-        width: 100%;
-        max-width: 100%;
         display: inline-block;
-        padding-bottom: 10px;
-        padding-left: 20px;
+        float: left;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        min-width: 80vw;
     }
 
     #top_line .top_line_left a img {
-        max-width: 90vw;
+        max-width: 80vw;
     }
 
     #top_line .top_line_right {
-        width: 100%;
-        max-width: 100%;
         display: inline-block;
+        float: left;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        min-width: 80vw;
+        margin-top: 3vh;
     }
 
     #top_line .top_line_right .phone,
     #top_line .top_line_right .description
     {
-        padding-left: 20px;
+        text-align: left;
         float: left;
     }
 
     #top_line .top_line_right .phone a {
-        font-size:20px; line-height:26px;
+        text-align: left;
+        float: left;
+        font-size:22px; line-height:32px;
     }
 
     #top_line .top_line_right .phone a::before
     {
-        background-size:20px 20px; height:20px; width:30px;
+        background-size:20px 20px;
+        height:20px; width:30px;
         margin:0 5px 0 0;
     }
-
-
-
-
 }

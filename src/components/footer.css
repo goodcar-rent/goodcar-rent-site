@@ -21,3 +21,17 @@
 #footer .foot_right .phone a {clear:both; float:right; font-family:Lato-Bold; font-size:30px; line-height:36px; margin:0; padding:0; position:relative; text-align:right;}
 #footer .foot_right .phone a::before {background-color:; background-image:url('../images/phone-30x30.png'); background-position:0 0; background-repeat:no-repeat; background-size:30px 30px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:30px; margin:0 10px 0 0; outline:none; position:relative; top:0px; width:30px;}
 #footer .foot_right .button {clear:both; float:right; font-family:Lato-Medium; font-size:24px; line-height:30px; margin:0; padding:20px 40px; position:relative;}
+
+@media all and (max-width: 1000px) {
+    #footer {
+        width: 100vw;
+    }
+
+    #footer .foot_center {
+        display: none;
+    }
+
+    #footer .foot_right {
+        display: none;
+    }
+}

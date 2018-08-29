@@ -7,7 +7,11 @@
 
 a, body, div, form, h1, h2, h3, h4, h5, h6, html, input, label, legend, li, ol, p, span, table, tbody, td, th, thead, tr, ul {font-weight:normal;}
 
-body {background:#ffffff; clear:both; color:#000000; font-family:Lato-Regular !important; font-size:16px; line-height:24px;}
+body {
+    background:#ffffff; clear:both; color:#000000;
+    font-family:Lato-Regular !important;
+    font-size:18px; line-height:22px;
+}
 
 .wrapper {clear:both; margin:0 auto; padding:0; position:relative; width:1000px;}
 

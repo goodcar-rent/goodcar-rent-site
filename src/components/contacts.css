@@ -15,7 +15,14 @@
 #our_contacts .left_contacts .social_buttons_list a.youtube {background:url('../images/social-sprites-24x24.png') no-repeat -144px 0;}
 #our_contacts .left_contacts .social_buttons_list a.telegram {background:url('../images/social-sprites-24x24.png') no-repeat -168px 0;}
 #our_contacts .left_contacts .social_buttons_list a.skype {background:url('../images/social-sprites-24x24.png') no-repeat -192px 0;}
-#our_contacts .right_contacts {border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px; box-shadow:0 0 30px rgba(0, 0, 0, 0.2); display:inline-block; float:left; margin:0 0 0 20px; padding:20px; position:relative; width:480px;}
+#our_contacts .right_contacts {
+    border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px;
+    box-shadow:0 0 30px rgba(0, 0, 0, 0.2);
+    display:inline-block;
+    float:left; margin:0 0 0 20px;
+    padding:20px; position:relative;
+    width:480px;
+}
 #our_contacts .right_contacts h3 {clear:both; float:left; font-family:Lato-Bold; font-size:30px; line-height:36px; margin:0 0 30px 0; padding:0; position:relative; text-align:center; width:100%;}
 #our_contacts .right_contacts form {clear:both; float:left; margin:0; padding:0; position:relative; width:100%;}
 #our_contacts .right_contacts form .row50 {float:left; margin:0 0 20px 0; padding:0; position:relative; width:220px;}
@@ -25,3 +32,42 @@
 #our_contacts .right_contacts form .row100 p {clear:both; float:left; font-size:14px; line-height:20px; margin:0 0 5px 0; padding:0; position:relative; width:440px;}
 #our_contacts .right_contacts form .row100 .text_form {clear:both; float:left; font-size:14px; height:100px; line-height:20px; margin:0 0 5px 0; padding:10px; position:relative; width:440px;}
 #our_contacts .right_contacts form .button {clear:both; display:inline-block; font-family:Lato-Medium; font-size:24px; line-height:30px; margin:0; padding:15px 0; width:440px;}
+
+@media all and (max-width: 1000px) {
+    #our_contacts {
+        padding: 20px 0;
+    }
+
+    #our_contacts h2 {
+        font-size:30px; line-height:32px;
+        margin-bottom: 20px;
+        width: 100vw;
+    }
+
+    #our_contacts .left_contacts {
+        clear:both;
+        width: 100vw;
+    }
+
+    #our_contacts .left_contacts h3 {
+        display: none;
+    }
+
+    #our_contacts .right_contacts {
+        clear: both;
+        float: left;
+        width: 100vw;
+        margin-top: 20px;
+        padding: 0px;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    #our_contacts .right_contacts form .row100 .text_form {
+        max-width: 90vw;
+    }
+
+    #our_contacts .right_contacts form .button {
+        max-width: 90vw;
+    }
+}
