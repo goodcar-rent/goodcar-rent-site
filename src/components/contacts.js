@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './contacts.css'
+import Cars from '../data/cars.json'
 
 export function Contacts (props) {
   const tel_formatted = props.siteMeta.tel_formatted ? props.siteMeta.tel_formatted : props.siteMeta.tel
 
+  let ndx = 0;
   return (
     <div>
       <div className="block100">
@@ -47,9 +49,7 @@ export function Contacts (props) {
                   <p>Автомобиль:</p>
                   <select size="1" className="text_form subject" name="auto">
                     <option selected disabled>- Выберите из списка: -</option>
-                    <option value="solaris">Hyundai Solaris</option>
-                    <option value="rio">Kia Rio</option>
-                    <option value="other">(другой - указан в сообщении)</option>
+                    { Cars.map( (item) => <option key = {ndx++} value={item.caption}>{item.caption}</option>)}
                   </select>
                 </label>
                 <label className="row100">
