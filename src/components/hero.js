@@ -10,11 +10,11 @@ export function Hero () {
         <div id= "slider_wrapper">
           <p className="big_text">Аренда автомобилей в Новосибирске</p>
           <p className="small_text">Быстро, выгодно и по низким ценам!</p>
-          <button
+          <a
             href = "#formOrder"
             className = "button"
             target = "_self"
-            title = "Оставить заявку">Оставить заявку</button>
+            title = "Оставить заявку">Оставить заявку</a>
         </div>
       </div>
     </div>

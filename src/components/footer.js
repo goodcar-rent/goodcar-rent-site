@@ -25,7 +25,7 @@ const Footer = (props) => {
           <div className="foot_right">
             <div className="description">Появились вопросы? Звоните!</div>
             <div className="phone"><a href={`tel:${props.tel}`} target="_self" title="Позвонить">{props.tel_formatted?props.tel_formatted:props.tel}</a></div>
-            <a href="#" className="button" target="_self" title="Оставить заявку">Оставить заявку</a>
+            {/*<a href="#" className="button" target="_self" title="Оставить заявку">Оставить заявку</a>*/}
           </div>
         </div>
       </div>
