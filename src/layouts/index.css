@@ -144,3 +144,9 @@ strong,
 b a,
 strong a
 {font-weight:bold;}
+
+@media all and (max-width: 1000px) {
+    .wrapper {
+        width: 100vw;
+    }
+}

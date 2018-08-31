@@ -35,18 +35,21 @@
 
 @media all and (max-width: 1000px) {
     #our_contacts {
-        padding: 20px 0;
+        padding: 20px 2vw 10px 2vw;
+        width: 100vw;
     }
 
     #our_contacts h2 {
         font-size:30px; line-height:32px;
         margin-bottom: 20px;
-        width: 100vw;
+        width: 100%;
     }
 
     #our_contacts .left_contacts {
         clear:both;
-        width: 100vw;
+        width: 100%;
+        padding: 10px 2vw 10px 2vw;
+        margin: 0;
     }
 
     #our_contacts .left_contacts h3 {
@@ -57,17 +60,27 @@
         clear: both;
         float: left;
         width: 100vw;
-        margin-top: 20px;
+        max-width: 100vw;
+        margin: 20px 0 20px 0;
         padding: 0px;
         border-radius: 0px;
         box-shadow: none;
     }
 
-    #our_contacts .right_contacts form .row100 .text_form {
+    #our_contacts .right_contacts form {
         max-width: 90vw;
     }
+    #our_contacts .right_contacts form .row50 { width: 90vw; max-width: 95vw;}
+    #our_contacts .right_contacts form .row50 p { width: 90vw; max-width: 95vw;}
+    #our_contacts .right_contacts form .row50 .text_form{ width: 90vw; max-width: 95vw;}
+
+    #our_contacts .right_contacts form .row100 { width: 90vw; max-width: 95vw;}
+    #our_contacts .right_contacts form .row100 p { width: 90vw; max-width: 95vw;}
+    #our_contacts .right_contacts form .row100 .text_form { width: 90vw; max-width: 95vw;}
 
     #our_contacts .right_contacts form .button {
         max-width: 90vw;
     }
+
+
 }
