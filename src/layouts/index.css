@@ -7,7 +7,11 @@
 
 a, body, div, form, h1, h2, h3, h4, h5, h6, html, input, label, legend, li, ol, p, span, table, tbody, td, th, thead, tr, ul {font-weight:normal;}
 
-body {background:#ffffff; clear:both; color:#000000; font-family:Lato-Regular !important; font-size:16px; line-height:24px;}
+body {
+    background:#ffffff; clear:both; color:#000000;
+    font-family:Lato-Regular !important;
+    font-size:18px; line-height:22px;
+}
 
 .wrapper {clear:both; margin:0 auto; padding:0; position:relative; width:1000px;}
 
@@ -141,101 +145,8 @@ b a,
 strong a
 {font-weight:bold;}
 
-#top_line {clear:both; float:left; margin:0; padding:30px 0; position:relative; width:100%; z-index:99;}
-#top_line .top_line_left {float:left; margin:10px 0 0 0; padding:0; position:relative; text-align:left; width:500px;}
-#top_line .top_line_left a {clear:both; float:left; margin:0; padding:0; position:relative; text-decoration:none !important;}
-#top_line .top_line_left a img {clear:both; float:left; margin:0; padding:0; position:relative;}
-#top_line .top_line_right {float:left; margin:0; padding:0; position:relative; text-align:right; width:500px;}
-#top_line .top_line_right .description {clear:both; float:right; font-family:Lato-Regular; font-size:16px; line-height:22px; margin:0 0 10px 0; padding:0; position:relative; text-align:right;}
-#top_line .top_line_right .phone {clear:both; float:right; margin:0 0 15px 0; padding:0; position:relative; text-align:right;}
-#top_line .top_line_right .phone a {clear:both; float:right; font-family:Lato-Bold; font-size:30px; line-height:36px; margin:0; padding:0; position:relative; text-align:right;}
-#top_line .top_line_right .phone a::before {background-color:; background-image:url('../images/phone-30x30.png'); background-position:0 0; background-repeat:no-repeat; background-size:30px 30px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:30px; margin:0 10px 0 0; outline:none; position:relative; top:0px; width:30px;}
-
-.slider {background:url('../images/slider-img-1920.jpg') no-repeat bottom center;}
-#slider_wrapper {clear:both; float:left; height:500px; margin:0; padding:40px 0; position:relative; width:100%;}
-#slider_wrapper .big_text {clear:both; float:left; font-family:Lato-Bold; font-size:50px; line-height:56px; margin:0 0 20px 0; padding:0; position:relative; width:600px;}
-#slider_wrapper .small_text {clear:both; float:left; font-family:Lato-Light; font-size:40px; line-height:46px; margin:0 0 40px 0; padding:0; position:relative; width:600px;}
-#slider_wrapper .button {clear:both; float:left; font-family:Lato-Medium; font-size:24px; line-height:30px; margin:0; padding:20px 50px;}
-
-#our_offers {clear:both; float:left; margin:0; padding:40px 0 0 0; position:relative; width:100%;}
-#our_offers h2 {clear:both; float:left; font-family:Lato-Bold; font-size:50px; line-height:56px; margin:0 0 40px 0; padding:0; position:relative; text-align:center; width:100%;}
-#our_offers ul.offers_list {clear:both; float:left; margin:0; padding:0; position:relative; width:100%;}
-#our_offers ul.offers_list li.offer_item {border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px; box-shadow:0 0 30px rgba(0, 0, 0, 0.2); display:inline-block; float:left; margin:0 40px 40px 0; padding:20px; position:relative; width:220px;}
-#our_offers ul.offers_list li.offer_hit {border:2px solid #96c11f; border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px; box-shadow:0 0 30px rgba(0, 0, 0, 0.2); display:inline-block; float:left; margin:0 40px 40px 0; padding:20px; position:relative; width:220px;}
-#our_offers ul.offers_list li.offer_hit .offer_hit_label {background-color:; background-image:url('../images/offer_hit_label.png'); background-position:0 0; background-repeat:no-repeat; background-size:60px 60px; border:0; display:inline-block; float:left; font-size:0px; height:60px; left:0; margin:0; outline:none; position:absolute; top:0; width:60px; z-index:99;}
-#our_offers ul.offers_list li.offer_item:hover {box-shadow:0 0 30px rgba(0, 0, 0, 0.4);}
-#our_offers ul.offers_list li.offer_item:last-child {margin:0 0 40px 0;}
-#our_offers ul.offers_list li.offer_item h3 {clear:both; float:left; font-family:Lato-Bold; font-size:18px; line-height:24px; margin:0 0 20px 0; padding:0; position:relative; text-align:center; width:100%;}
-#our_offers ul.offers_list li.offer_item img {clear:both; height:100px; margin:0 0 20px 0; padding:0; position:relative; text-align:center; width:180px;}
-#our_offers ul.offers_list li.offer_item .price {clear:both; float:left; font-family:Lato-Bold; font-size:18px; line-height:24px; margin:0 0 20px 0; padding:0; position:relative; text-align:center; width:180px;}
-#our_offers ul.offers_list li.offer_item .offers_description {clear:both; float:left; margin:0 0 20px 0; padding:0; position:relative; width:100%;}
-#our_offers ul.offers_list li.offer_item .offers_description .meta_item {clear:both; float:left; font-family:Lato-Bold; font-size:14px; line-height:20px; margin:0 0 10px 0; padding:0; position:relative; width:100%;}
-#our_offers ul.offers_list li.offer_item .offers_description .meta_item:last-child {margin:0; width:100%}
-#our_offers ul.offers_list li.offer_item .offers_description .peoples::before {background-color:; background-image:url('../images/offers_description_meta_item_1.png'); background-position:0 0; background-repeat:no-repeat; background-size:20px 20px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:20px; margin:0 10px 0 0; outline:none; position:relative; top:-5px; width:30px;}
-#our_offers ul.offers_list li.offer_item .offers_description .baggage::before {background-color:; background-image:url('../images/offers_description_meta_item_2.png'); background-position:0 0; background-repeat:no-repeat; background-size:20px 20px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:20px; margin:0 10px 0 0; outline:none; position:relative; top:-5px; width:30px;}
-#our_offers ul.offers_list li.offer_item .offers_description .gear::before {background-color:; background-image:url('../images/offers_description_meta_item_3.png'); background-position:0 0; background-repeat:no-repeat; background-size:20px 20px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:20px; margin:0 10px 0 0; outline:none; position:relative; top:-5px; width:30px;}
-#our_offers ul.offers_list li.offer_item .button {clear:both; float:left; font-family:Lato-Medium; font-size:18px; line-height:24px; margin:0; padding:15px 0; width:100%;}
-
-#our_advantages {clear:both; float:left; margin:0; padding:40px 0; position:relative; text-align:center; width:100%;}
-#our_advantages h2 {clear:both; float:left; font-family:Lato-Bold; font-size:50px; line-height:56px; margin:0 0 40px 0; padding:0; position:relative; text-align:center; width:100%;}
-#our_advantages ul.our_advantages_list {clear:both; float:left; margin:0; padding:0; position:relative; width:100%;}
-#our_advantages ul.our_advantages_list li.advantage_item {display:inline-block; float:left; margin:0 40px 0 0; padding:0; position:relative; width:220px;}
-#our_advantages ul.our_advantages_list li.advantage_item img {clear:both; float:none; height:120px; margin:0 0 30px 0; padding:0; position:relative; width:120px;}
-#our_advantages ul.our_advantages_list li.advantage_item:last-child {margin:0;}
-#our_advantages ul.our_advantages_list li.advantage_item .head_text {clear:both; float:left; font-family:Lato-Bold; font-size:22px; line-height:28px; margin:0 0 20px 0; padding:0; position:relative; text-align:center; width:100%;}
-#our_advantages ul.our_advantages_list li.advantage_item .description {clear:both; float:left; font-family:Lato-Regular; font-size:18px; line-height:24px; margin:0; padding:0; position:relative; text-align:center; width:100%;}
-#our_advantages .button {clear:both; display:inline-block; font-family:Lato-Medium; font-size:24px; line-height:30px; margin:40px 0 0 0; padding:20px 60px;}
-
-#our_contacts {clear:both; float:left; margin:0; padding:40px 0; position:relative; width:100%;}
-#our_contacts h2 {clear:both; float:left; font-family:Lato-Bold; font-size:50px; line-height:56px; margin:0 0 40px 0; padding:0; position:relative; text-align:center; width:100%;}
-#our_contacts .left_contacts {float:left; margin:0 20px 0 0; padding:0; position:relative; width:480px;}
-#our_contacts .left_contacts h3 {clear:both; float:left; font-family:Lato-Bold; font-size:30px; line-height:36px; margin:0 0 30px 0; padding:0; position:relative; width:100%;}
-#our_contacts .left_contacts .row {clear:both; float:left; font-family:Lato-Regular; font-size:18px; line-height:24px; margin:0 0 10px 0; padding:0; position:relative; width:100%;}
-#our_contacts .left_contacts .social_buttons_list {clear:both; float:left; margin:10px 0 0 0; padding:0; position:relative;}
-#our_contacts .left_contacts .social_buttons_list a {display:inline-block; height:24px; margin:0; position:relative; text-decoration:none !important; width:24px;}
-#our_contacts .left_contacts .social_buttons_list a:last-child {margin:0;}
-#our_contacts .left_contacts .social_buttons_list a.vkontakte {background:url('../images/social-sprites-24x24.png') no-repeat 0 0;}
-#our_contacts .left_contacts .social_buttons_list a.odnoklassniki {background:url('../images/social-sprites-24x24.png') no-repeat -24px 0;}
-#our_contacts .left_contacts .social_buttons_list a.facebook {background:url('../images/social-sprites-24x24.png') no-repeat -48px 0;}
-#our_contacts .left_contacts .social_buttons_list a.twitter {background:url('../images/social-sprites-24x24.png') no-repeat -72px 0;}
-#our_contacts .left_contacts .social_buttons_list a.instagram {background:url('../images/social-sprites-24x24.png') no-repeat -96px 0;}
-#our_contacts .left_contacts .social_buttons_list a.googleplus {background:url('../images/social-sprites-24x24.png') no-repeat -120px 0;}
-#our_contacts .left_contacts .social_buttons_list a.youtube {background:url('../images/social-sprites-24x24.png') no-repeat -144px 0;}
-#our_contacts .left_contacts .social_buttons_list a.telegram {background:url('../images/social-sprites-24x24.png') no-repeat -168px 0;}
-#our_contacts .left_contacts .social_buttons_list a.skype {background:url('../images/social-sprites-24x24.png') no-repeat -192px 0;}
-#our_contacts .right_contacts {border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px; box-shadow:0 0 30px rgba(0, 0, 0, 0.2); display:inline-block; float:left; margin:0 0 0 20px; padding:20px; position:relative; width:480px;}
-#our_contacts .right_contacts h3 {clear:both; float:left; font-family:Lato-Bold; font-size:30px; line-height:36px; margin:0 0 30px 0; padding:0; position:relative; text-align:center; width:100%;}
-#our_contacts .right_contacts form {clear:both; float:left; margin:0; padding:0; position:relative; width:100%;}
-#our_contacts .right_contacts form .row50 {float:left; margin:0 0 20px 0; padding:0; position:relative; width:220px;}
-#our_contacts .right_contacts form .row50 p {clear:both; float:left; font-family:Lato-Regular; font-size:14px; line-height:20px; margin:0 0 5px 0; padding:0; position:relative; width:220px;}
-#our_contacts .right_contacts form .row50 .text_form {clear:both; float:left; font-size:14px; height:40px; line-height:20px; margin:0; padding:10px; position:relative; width:200px;}
-#our_contacts .right_contacts form .row100 {float:left; margin:0 0 20px 0; padding:0; position:relative; width:440px;}
-#our_contacts .right_contacts form .row100 p {clear:both; float:left; font-size:14px; line-height:20px; margin:0 0 5px 0; padding:0; position:relative; width:440px;}
-#our_contacts .right_contacts form .row100 .text_form {clear:both; float:left; font-size:14px; height:100px; line-height:20px; margin:0 0 5px 0; padding:10px; position:relative; width:440px;}
-#our_contacts .right_contacts form .button {clear:both; display:inline-block; font-family:Lato-Medium; font-size:24px; line-height:30px; margin:0; padding:15px 0; width:440px;}
-
-#map {clear:both; display:block; float:left; height:400px; margin:0; padding:0; position:relative; width:100%;}
-
-#footer {clear:both; float:left; margin:0; padding:40px 0; position:relative; width:100%;}
-#footer .foot_left {float:left; margin:0; padding:0; position:relative; text-align:left; width:300px;}
-#footer .foot_left p {clear:both; float:left; font-family:Lato-Regular; font-size:16px; line-height:22px; margin:0; padding:0; position:relative; width:100%;}
-#footer .foot_left h3 {clear:both; float:left; font-family:Lato-Regular; font-size:16px; line-height:22px; margin:0; padding:0; position:relative; width:100%;}
-#footer .foot_left .developer {clear:both; float:left; font-family:Lato-Regular; font-size:14px; line-height:20px; margin:20px 0 0 0; padding:0; position:relative; width:100%;}
-#footer .foot_center {float:left; margin:0 50px; padding:0; position:relative; text-align:center; width:300px;}
-#footer .foot_center a {display:inline-block; height:24px; margin:0; position:relative; text-decoration:none !important; width:24px;}
-#footer .foot_center a:last-child {margin:0;}
-#footer .foot_center a.vkontakte {background:url('../images/social-sprites-24x24.png') no-repeat 0 0;}
-#footer .foot_center a.odnoklassniki {background:url('../images/social-sprites-24x24.png') no-repeat -24px 0;}
-#footer .foot_center a.facebook {background:url('../images/social-sprites-24x24.png') no-repeat -48px 0;}
-#footer .foot_center a.twitter {background:url('../images/social-sprites-24x24.png') no-repeat -72px 0;}
-#footer .foot_center a.instagram {background:url('../images/social-sprites-24x24.png') no-repeat -96px 0;}
-#footer .foot_center a.googleplus {background:url('../images/social-sprites-24x24.png') no-repeat -120px 0;}
-#footer .foot_center a.youtube {background:url('../images/social-sprites-24x24.png') no-repeat -144px 0;}
-#footer .foot_center a.telegram {background:url('../images/social-sprites-24x24.png') no-repeat -168px 0;}
-#footer .foot_center a.skype {background:url('../images/social-sprites-24x24.png') no-repeat -192px 0;}
-#footer .foot_right {float:left; margin:0; padding:0; position:relative; text-align:right; width:300px;}
-#footer .foot_right .description {clear:both; float:right; font-family:Lato-Regular; font-size:16px; line-height:22px; margin:0 0 10px 0; padding:0; position:relative; text-align:right;}
-#footer .foot_right .phone {clear:both; float:right; margin:0 0 15px 0; padding:0; position:relative; text-align:right;}
-#footer .foot_right .phone a {clear:both; float:right; font-family:Lato-Bold; font-size:30px; line-height:36px; margin:0; padding:0; position:relative; text-align:right;}
-#footer .foot_right .phone a::before {background-color:; background-image:url('../images/phone-30x30.png'); background-position:0 0; background-repeat:no-repeat; background-size:30px 30px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:30px; margin:0 10px 0 0; outline:none; position:relative; top:0px; width:30px;}
-#footer .foot_right .button {clear:both; float:right; font-family:Lato-Medium; font-size:24px; line-height:30px; margin:0; padding:20px 40px; position:relative;}
+@media all and (max-width: 1000px) {
+    .wrapper {
+        width: 100vw;
+    }
+}

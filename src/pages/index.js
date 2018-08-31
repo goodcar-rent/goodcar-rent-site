@@ -1,26 +1,20 @@
 import React from 'react'
+import { Header } from '../components/header'
 import { Hero } from '../components/hero'
 import { CarList } from '../components/car-list'
-import { ServiceList } from '../components/service-list'
-import { Process } from '../components/process'
-import { Order } from '../components/order'
+import { AdvantageList } from '../components/advantage-list'
+import { Contacts } from '../components/contacts'
+import { Map } from '../components/map'
 import Cars from '../data/cars.json'
 
 const IndexPage = ({data}) => (
   <div>
-    <Hero tel={data.site.siteMetadata.tel} tel_formatted={data.site.siteMetadata.tel_formatted} />
+    <Header siteMeta={data.site.siteMetadata } />
+    <Hero />
     <CarList/>
-    <ServiceList/>
-    <Process
-      tel={data.site.siteMetadata.tel}
-      tel_formatted={data.site.siteMetadata.tel_formatted}
-      email={data.site.siteMetadata.email}
-      social_fb={data.site.siteMetadata.social_fb}
-      social_vk={data.site.siteMetadata.social_vk}
-      social_ig={data.site.siteMetadata.social_ig}
-      cars={Cars}
-    />
-    <Order />
+    <AdvantageList/>
+    <Contacts siteMeta={data.site.siteMetadata } />
+    <Map />
   </div>
 )
 

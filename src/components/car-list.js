@@ -1,5 +1,6 @@
 import React from 'react'
 import CarCard from './car-card'
+import './car-list.css'
 import Cars from '../data/cars.json'
 
 export function CarList () {

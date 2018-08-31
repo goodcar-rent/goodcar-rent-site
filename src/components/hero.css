@@ -1,80 +1,47 @@
-.Hero {
-  height: 420px;
-  background: dimgray;
+.slider {background:url('../images/slider-img-1920.jpg') no-repeat bottom center;}
+#slider_wrapper {
+    clear:both; float:left; height:450px;
+    margin:0; padding:40px 0; position:relative;
+    width: 100vw;
+}
+#slider_wrapper .big_text {
+    clear: both; float: left;
+    font-family:Lato-Bold;
+    font-size: 50px;
+    line-height:56px; margin:0 0 20px 0; padding:0; position:relative;
+    width: 600px;
 }
 
-.HeroGroup {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 150px 50px;
-  text-align: center;
-  backdrop-filter: blur(3px);
+#slider_wrapper .small_text {
+    clear:both; float:left;
+    font-family:Lato-Light;
+    font-size: 22px; line-height:32px;
+    margin:0 0 40px 0; padding:0; position:relative;
+    width:600px;
 }
+#slider_wrapper .button {
+    clear:both; display: inline-block;
+    float:left;
+    font-family:Lato-Medium;
+    font-size:32px; line-height:36px; margin:0; padding: 16px 30px;}
 
-.Hero h1 {
-  margin: 0;
-  color: white;
-  font-size: 60px;
-  line-height: 1.2;
-}
-
-.Hero p {
-  font-size: 30px;
-  line-height: 1.5;
-  color: rgba(255,255,255, 0.8);
-}
-
-.Hero a {
-  font-size: 17px;
-  font-weight: 600;
-  color: white;
-  text-transform: uppercase;
-  background: rgba(0,0,0,0.7);
-  padding: 9px 20px;
-  border: 1px solid rgba(255,255,255, 0.25);
-  border-radius: 20px;
-}
-
-@media (max-width: 640px) {
-  .HeroGroup {
-	padding: 100px 20px;
+@media all and (max-width: 1000px) {
+  #slider_wrapper {
+      height: 400px;
+  }
+  #slider_wrapper .big_text {
+      font-size:30px; line-height:32px;
+      margin-left: 10vw;
+      width: 80vw; text-wrap: normal;
+  }
+  #slider_wrapper .small_text {
+      font-size:22px; line-height:26px;
+      margin-left: 10vw; width:80vw;
+  }
+  #slider_wrapper .button {
+      font-size:22px; line-height:26px;
+      margin-left: 10vw; min-width: 30vw;
+      margin-top: 50px;
   }
 
-  .Hero h1 {
-	font-size: 40px;
-  }
-
-  .Hero p {
-	font-size: 24px;
-  }
-}
-
-@keyframes HeroAnimation {
-  0% {
-	  opacity: 0;
-	  transform: translateY(20px)
-  }
-  100% {
-	  opacity: 1;
-	  transform: translateY(0px)
-  }
-}
-
-.Hero h1 {
-  animation: HeroAnimation 3s 0.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-  opacity: 0;
-}
-
-.Hero p {
-  animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-  opacity: 0;
-}
-
-.Hero a {
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.Hero a:hover {
-  background: white;
-  color: black;
 }

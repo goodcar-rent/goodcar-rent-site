@@ -1,48 +1,94 @@
-.Header {
-	position: fixed;
-	width: 100%;
-	padding: 50px 0;
-	z-index: 100;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
-	background: forestgreen;
+
+#top_line {
+    clear:both; float:left; margin:0; padding:30px 0; position:relative; width:100%; z-index:99;
+}
+#top_line .top_line_left {
+    float:left; margin:10px 0 0 0; padding:0; position:relative; text-align:left; width:50%; max-width: 50%;
+}
+#top_line .top_line_left a {
+    clear:both; float:left; margin:0; padding:0; position:relative; text-decoration:none;
+}
+#top_line .top_line_left a:hover {
+    box-shadow: none;
+}
+#top_line .top_line_left a img {
+    clear:both; float:left; margin:0; padding:0; position:relative;
 }
 
-.HeaderGroup {
-	max-width: 800px;
-	margin: 0 auto;
-	text-align: center;
-	display: grid;
-	grid-template-columns: repeat(5, auto);
-	align-items: center;
-	justify-items: center;
-}
 
-.Header a {
-	color: white;
-	font-weight: 700;
+#top_line .top_line_right {
+    float:left; margin:0; padding:0; position:relative; text-align:right; width:50%; max-width: 50%;
 }
+#top_line .top_line_right .description {
+    clear:both; float:right;
+    font-family:Lato-Regular;
+    font-size: 22px; line-height: 32px;
+    margin:0 0 10px 0; padding:0; position:relative; text-align:right;}
 
-.Header button {
-	padding: 8px 20px;
-	font-size: 20px;
-	background: #56CCF2;
-	border-radius: 10px;
-	border: none;
-	font-weight: 700;
-	outline: none;
-	cursor: pointer;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+#top_line .top_line_right .phone {
+    clear:both; float:right; margin:0 0 15px 0; padding:0; position:relative; text-align:right; outline: none;
+    text-decoration: none;
 }
-
-.Header button:hover {
-	background: white;
-	color: black;
-	box-shadow: 0 10px 20px rgba(0,0,0, 0.25);
-	transform: translateY(-3px);
+#top_line .top_line_right .phone a {
+    clear:both; float:right;
+    font-family:Lato-Bold;
+    font-size: 32px; line-height: 36px;
+    margin:0; padding:0; position: relative;
+    text-align:right; outline: none; text-decoration: none;
 }
+#top_line .top_line_right .phone a:hover {
+    box-shadow: none; text-decoration: underline;
+}
+#top_line .top_line_right .phone a::before
+  {
+    background-color:; background-image:url('../images/phone-30x30.png'); background-position:0 0; background-repeat:no-repeat;
+    background-size:30px 30px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:30px;
+    margin:0 10px 0 0; outline:none; position:relative; top:0px; width:30px;
+  }
 
-.HeaderScrolled {
-	background: rgba(0, 101, 0, 0.8);
-	padding: 15px 0;
-	backdrop-filter: blur(20px);
+@media all and (max-width: 1000px) {
+    #top_line {
+        width: 100vw;
+        padding: 5px 5px;
+    }
+    #top_line .top_line_left {
+        display: inline-block;
+        float: left;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        min-width: 80vw;
+    }
+
+    #top_line .top_line_left a img {
+        max-width: 80vw;
+    }
+
+    #top_line .top_line_right {
+        display: inline-block;
+        float: left;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        min-width: 80vw;
+        margin-top: 3vh;
+    }
+
+    #top_line .top_line_right .phone,
+    #top_line .top_line_right .description
+    {
+        text-align: left;
+        float: left;
+    }
+
+    #top_line .top_line_right .phone a {
+        text-align: left;
+        float: left;
+        font-size:22px; line-height:32px;
+    }
+
+    #top_line .top_line_right .phone a::before
+    {
+        background-size:20px 20px;
+        height:20px; width:30px;
+        margin:0 5px 0 0;
+    }
 }
