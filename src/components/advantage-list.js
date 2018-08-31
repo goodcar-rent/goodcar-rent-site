@@ -33,7 +33,6 @@ export function AdvantageList () {
               <p className="description">Заказать и получить машину быстро и легко - по двум документам. Оформление договора меньше 10 минут</p>
             </li>
           </ul>
-          <a href="#" className="button" target="_self" title="Оставить заявку">Оставить заявку</a>
         </div>
       </div>
     </div>
