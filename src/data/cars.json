@@ -22,6 +22,28 @@
     "price": 1800
   },
   {
+    "caption": "VW Polo (Sedan) 1.6AT",
+    "icon": "polo",
+    "ribbon": "new",
+    "engine": "1.6",
+    "fuel": "gas",
+    "gear": "AT",
+    "baggage": 3,
+    "people": 5,
+    "price": 1600
+  },
+  {
+    "caption": "Ford Focus II 1.6AT",
+    "icon": "focus",
+    "ribbon": "new",
+    "engine": "1.6",
+    "fuel": "gas",
+    "gear": "AT",
+    "baggage": 3,
+    "people": 5,
+    "price": 1250
+  },
+  {
     "caption": "Hyundai Accent 1.6AT",
     "icon": "accent",
     "ribbon": "",
@@ -50,6 +72,17 @@
     "engine": "1.6",
     "fuel": "gas",
     "gear": "MT",
+    "baggage": 3,
+    "people": 5,
+    "price": 1000
+  },
+  {
+    "caption": "Nissan Almera (classic) 1.6AT",
+    "icon": "almera",
+    "ribbon": "",
+    "engine": "1.6",
+    "fuel": "gas",
+    "gear": "AT",
     "baggage": 3,
     "people": 5,
     "price": 1000

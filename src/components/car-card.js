@@ -9,6 +9,9 @@ import Icon_Spectra from '../images/kia-spectra-2008.png'
 import Icon_Lacetti from '../images/chevrolet-lacetti-2008.png'
 import Icon_Nexia from '../images/daewoo-nexia-2012.png'
 import Icon_Matrix from '../images/hyundai-matrix-2008.png'
+import Icon_Polo from '../images/cars/vw-polo-sedan.png'
+import Icon_Focus from '../images/cars/ford-focus-2.png'
+import Icon_Almera from '../images/cars/nissan-almera-classic.png'
 
 const CarCard = props => {
 
@@ -30,6 +33,9 @@ const CarCard = props => {
 			{props.icon === 'lacetti' && <img src={Icon_Lacetti} alt="#"/> }
 			{props.icon === 'nexia' && <img src={Icon_Nexia} alt="#"/> }
 			{props.icon === 'matrix' && <img src={Icon_Matrix} alt="#"/> }
+			{props.icon === 'polo' && <img src={Icon_Polo} alt="Volkswagen Polo (photo)"/> }
+			{props.icon === 'focus' && <img src={Icon_Focus} alt="Ford Focus (photo)"/> }
+			{props.icon === 'almera' && <img src={Icon_Almera} alt="Nissan Almera (photo)"/> }
 
 			<div className="offers_description">
 				<p className="meta_item peoples">{props.people} чел</p>
