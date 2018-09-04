@@ -37,6 +37,9 @@ const CarCard = props => {
 			{props.icon === 'focus' && <img src={Icon_Focus} alt="Ford Focus (photo)"/> }
 			{props.icon === 'almera' && <img src={Icon_Almera} alt="Nissan Almera (photo)"/> }
 
+      {props.icon.url !== undefined && <img src={props.icon.url} alt={`${props.caption} photo`} />}
+
+
 			<div className="offers_description">
 				<p className="meta_item peoples">{props.people} чел</p>
 				<p className="meta_item baggage">{props.baggage} мест(а)</p>
@@ -55,7 +58,12 @@ CarCard.propTypes = {
 	baggage: PropTypes.number.isRequired,
 	gear: PropTypes.oneOf(['AT','MT']).isRequired,
 	price: PropTypes.number.isRequired,
-	icon: PropTypes.oneOf(['logan', 'solaris', 'rio'])
+	icon: PropTypes.oneOfType([
+		PropTypes.oneOf(['logan', 'solaris', 'rio']),
+		PropTypes.shape({
+      url: PropTypes.string
+    })
+	])
 }
 
 export default CarCard

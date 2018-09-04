@@ -1,6 +1,4 @@
-import env from 'dotenv-safe'
-
-env.config()
+require('dotenv-safe').config()
 
 module.exports = {
   siteMetadata: {
@@ -26,7 +24,7 @@ module.exports = {
         endpoint: process.env.GRAPHCMS_API,
         token: process.env.GRAPHCMS_TOKEN,
         query: `{
-            allCars {
+            cars {
               id
               caption
               icon {
@@ -42,6 +40,7 @@ module.exports = {
               baggage
               people
               price
+              status
             }
         }`,
       },

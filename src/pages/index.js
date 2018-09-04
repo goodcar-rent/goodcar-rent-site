@@ -11,7 +11,7 @@ const IndexPage = ({data}) => (
   <div>
     <Header siteMeta={data.site.siteMetadata } />
     <Hero />
-    <CarList/>
+    <CarList cars={ data.allCar.edges.map( (item) => item.node) }/>
     <AdvantageList/>
     <Contacts siteMeta={data.site.siteMetadata } />
     <Map />
@@ -20,18 +20,42 @@ const IndexPage = ({data}) => (
 
 export const query = graphql`
   query IndexQuery {
-    site {
-      siteMetadata {
-        title
-        tel
-        tel_formatted
-        email
-        social_vk
-        social_fb
-        social_ig
+  site {
+    siteMetadata {
+      title
+      tel
+      tel_formatted
+      email
+      social_vk
+      social_fb
+      social_ig
+    }
+  }
+  allCar(filter: {status: {eq: "PUBLISHED"}}) {
+    edges {
+      node  {
+        id
+        caption
+        icon {
+          id
+          url
+          width
+          height
+          mimeType
+        }
+        engine
+        transmission
+        fuelType
+        baggage
+        people
+        price
+        status
       }
     }
   }
+}
+
+  
 `
 
 export default IndexPage
