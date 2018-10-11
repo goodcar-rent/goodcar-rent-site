@@ -22,6 +22,17 @@
     "price": 1800
   },
   {
+    "caption": "Renault Logan (new) 1.6AT",
+    "icon": "logan-new",
+    "ribbon": "new",
+    "engine": "1.6",
+    "fuel": "gas",
+    "gear": "AT",
+    "baggage": 3,
+    "people": 5,
+    "price": 1200
+  },
+  {
     "caption": "VW Polo (Sedan) 1.6AT",
     "icon": "polo",
     "ribbon": "new",

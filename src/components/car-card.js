@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './car-card.css'
 import Icon_Logan2018 from '../images/cars/logan2018.png'
+import Icon_LoganNew from '../images/cars/logan-new.png'
 import Icon_Solaris from '../images/cars/hyundai-solaris-II.png'
 import Icon_Rio from '../images/cars/kia-rio.png'
 import Icon_Accent from '../images/cars/hyundai-accent-2008.png'
@@ -26,6 +27,7 @@ const CarCard = props => {
 			<h3>{props.caption}</h3>
 
 			{props.icon === 'logan' && <img src={Icon_Logan2018} alt="#"/> }
+			{props.icon === 'logan-new' && <img src={Icon_LoganNew} alt="Renault Logan"/> }
 			{props.icon === 'solaris' && <img src={Icon_Solaris} alt="#"/> }
 			{props.icon === 'rio' && <img src={Icon_Rio} alt="#"/> }
 			{props.icon === 'accent' && <img src={Icon_Accent} alt="#"/> }
