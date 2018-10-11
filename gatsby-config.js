@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
     {
       resolve: 'gatsby-plugin-yandex-metrika',
-      options:
+      options: {
         trackingId: '50703043',
         webvisor: true,
         trackHash: true,
