@@ -11,6 +11,15 @@ module.exports = {
     social_ig: 'https://www.instagram.com/goodcarrentnsk/'
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-yandex-metrika',
+      options:
+        trackingId: '50703043',
+        webvisor: true,
+        trackHash: true,
+        version: 2,
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-typography`,
