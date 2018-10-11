@@ -1,3 +1,5 @@
+require('dotenv-safe').config()
+
 module.exports = {
   siteMetadata: {
     title: 'GoodCar.rent - Прокат машин в Новосибирске, посуточная аренда автомобилей',
@@ -16,5 +18,32 @@ module.exports = {
         pathToConfigModule: `src/utils/typography.js`,
       },
     },
+    {
+      resolve: `gatsby-source-graphcms`,
+      options: {
+        endpoint: process.env.GRAPHCMS_API,
+        token: process.env.GRAPHCMS_TOKEN,
+        query: `{
+            cars {
+              id
+              caption
+              icon {
+                id
+                url
+                width
+                height
+                mimeType
+              }
+              engine
+              transmission
+              fuelType
+              baggage
+              people
+              price
+              status
+            }
+        }`,
+      },
+    }
   ],
 }
