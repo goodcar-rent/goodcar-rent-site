@@ -11,6 +11,32 @@ module.exports = {
     social_ig: 'https://www.instagram.com/goodcarrentnsk/'
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'gatsby-starter-default',
+        short_name: 'starter',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+      },
+    },
+    {
+    resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GoodCar.rent`,
+        short_name: `GoodCar.rent`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `minimal-ui`,
+        icon: `src/images/goodcar-logo.png`, // This path is relative to the root of the site.
+      },
+    },
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-yandex-metrika',
       options: {
@@ -27,13 +53,6 @@ module.exports = {
         trackingId: "UA-23824119-2",
         // enable ip anonymization
         anonymize: false
-      },
-    },
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography.js`,
       },
     },
     {
@@ -63,38 +82,38 @@ module.exports = {
         }`,
       },
     },
-    {
-    resolve: `gatsby-plugin-favicon`,
-    options: {
-      logo: "./src/images/goodcar-logo.png",
+    /*{
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/images/goodcar-logo.png",
 
-      // WebApp Manifest Configuration
-      appName: null, // Inferred with your package.json
-      appDescription: null,
-      developerName: null,
-      developerURL: null,
-      dir: 'auto',
-      lang: 'ru-RU',
-      background: '#fff',
-      theme_color: '#fff',
-      display: 'standalone',
-      orientation: 'any',
-      start_url: '/',
-      version: '1.0',
+        // WebApp Manifest Configuration
+        appName: null, // Inferred with your package.json
+        appDescription: null,
+        developerName: null,
+        developerURL: null,
+        dir: 'auto',
+        lang: 'ru-RU',
+        background: '#fff',
+        theme_color: '#fff',
+        display: 'standalone',
+        orientation: 'any',
+        start_url: '/',
+        version: '1.0',
 
-      icons: {
-        android: true,
-        appleIcon: true,
-        appleStartup: true,
-        coast: false,
-        favicons: true,
-        firefox: true,
-        opengraph: false,
-        twitter: false,
-        yandex: true,
-        windows: true
-      }
-    }
-  }
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: false,
+          opengraph: false,
+          twitter: false,
+          yandex: false,
+          windows: false
+        }
+      },
+    }*/
   ],
 }
