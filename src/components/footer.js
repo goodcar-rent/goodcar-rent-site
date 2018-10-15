@@ -8,7 +8,7 @@ const Footer = (props) => {
       <div className="wrapper">
         <div id="footer">
           <div className="foot_left">
-            <p className="copyright"><a href="#" target="_self" title="#">GoodCars.rent</a> © 2018</p>
+            <p className="copyright"><a href="/" target="_self" title="GoodCar.rent">GoodCars.rent</a> © 2018</p>
             <h3 className="description">Все права защищены. Копирование материалов с сайта без указания автора -
               запрещено</h3>
             <p className="developer">Дизайн сайта &mdash; <a href="http://veshkin.ru" target="_blank" rel="nofollow noopener noreferrer"
@@ -17,9 +17,9 @@ const Footer = (props) => {
           </div>
           <div className="foot_center">
             <div className="social_buttons_list">
-                <a href={props.social_vk} className="social_button vkontakte" target="_blank" rel="nofollow noopener noreferrer" title="Вконтакте" />
-                <a href={props.social_fb} className="social_button facebook" target="_blank" rel="nofollow noopener noreferrer" title="Facebook" />
-                <a href={props.social_ig} className="social_button instagram" target="_blank" rel="nofollow noopener noreferrer" title="Instagram" />
+                <a href={`${props.social_vk}`} className="social_button vkontakte" target="_blank" rel="nofollow noopener noreferrer" title="Вконтакте"> </a>
+                <a href={props.social_fb} className="social_button facebook" target="_blank" rel="nofollow noopener noreferrer" title="Facebook">  </a>
+                <a href={props.social_ig} className="social_button instagram" target="_blank" rel="nofollow noopener noreferrer" title="Instagram"> </a>
             </div>
           </div>
           <div className="foot_right">
