@@ -22,9 +22,9 @@ export function Contacts (props) {
                                                                  title="Написать">{props.siteMeta.email}</a></p>
               <p className="row"><strong>Офис работает: </strong>Будние дни с 09:00 – 18:00, <strong>суббота</strong> с 10:00 до 15:00, а в остальное время мы ждем ваших обращений по телефону или почте!</p>
               <div className="social_buttons_list">
-                <a href={props.siteMeta.social_vk} className="social_button vkontakte" target="_blank" title="Вконтакте" rel="nofollow"></a>
-                <a href={props.siteMeta.social_fb} className="social_button facebook" target="_blank" title="Facebook" rel="nofollow"></a>
-                <a href={props.siteMeta.social_ig} className="social_button instagram" target="_blank" title="Instagram" rel="nofollow"></a>
+                <a href={props.siteMeta.social_vk} className="social_button vkontakte" target="_blank" title="Вконтакте" rel="nofollow noopener noreferrer"> </a>
+                <a href={props.siteMeta.social_fb} className="social_button facebook" target="_blank" title="Facebook" rel="nofollow noopener noreferrer"> </a>
+                <a href={props.siteMeta.social_ig} className="social_button instagram" target="_blank" title="Instagram" rel="nofollow noopener noreferrer"> </a>
               </div>
             </div>
             <div className="right_contacts">
