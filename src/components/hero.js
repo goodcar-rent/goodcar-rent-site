@@ -8,7 +8,7 @@ export function Hero () {
       <div className= "wrapper">
         <div id= "slider_wrapper">
           <p className="big_text">Аренда автомобилей в Новосибирске</p>
-          <p className="small_text">Быстро, выгодно и по низким ценам!</p>
+          <p className="small_text">Быстро, выгодно и по низким ценам - заказывайте по телефону или оставляйте заявку на сайте:</p>
           <a
             href = "#formOrder"
             className = "button"

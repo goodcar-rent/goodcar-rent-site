@@ -56,9 +56,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-graphcms`,
+      resolve: `gatsby-source-graphql`,
       options: {
-        endpoint: process.env.GRAPHCMS_API,
+        typeName: 'ALLCARS',
+        fieldName: 'allCars',
+        url: 'https://api-euwest.graphcms.com/v1/cjlntkoxu03u701f8h26nhlji/master',
+/*        endpoint: process.env.GRAPHCMS_API,
         token: process.env.GRAPHCMS_TOKEN,
         query: `{
             cars {
@@ -79,7 +82,7 @@ module.exports = {
               price
               status
             }
-        }`,
+        }`,*/
       },
     },
     /*{

@@ -5,29 +5,28 @@
     margin:0 0 40px 0;
     padding:0; position:relative; text-align:center; width:100%;
 }
-#our_offers ul.offers_list {clear:both; float:left; margin:0; padding:0; position:relative; width:100%;}
+#our_offers ul.offers_list {clear:both; float:left; margin:0 0 2% 0; padding:0; position:relative; width:100%;}
 #our_offers ul.offers_list li.offer_item {
     border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px;
     box-shadow:0 0 30px rgba(0, 0, 0, 0.2);
-    display:inline-block;
     float:left;
-    margin:0 40px 40px 0;
-    padding:20px; position:relative;
-    width:220px;
+    margin:0 0vw 10px 2%;
+    padding:10px; position:relative;
+    width: 23%;
 }
 #our_offers ul.offers_list li.offer_hit {border:2px solid #96c11f; border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px; box-shadow:0 0 30px rgba(0, 0, 0, 0.2); display:inline-block; float:left; margin:0 40px 40px 0; padding:20px; position:relative; width:220px;}
-#our_offers ul.offers_list li.offer_hit .offer_hit_label {background-color:; background-image:url('../images/offer_hit_label.png'); background-position:0 0; background-repeat:no-repeat; background-size:60px 60px; border:0; display:inline-block; float:left; font-size:0px; height:60px; left:0; margin:0; outline:none; position:absolute; top:0; width:60px; z-index:99;}
+#our_offers ul.offers_list li.offer_hit .offer_hit_label {background-image:url('../images/offer_hit_label.png'); background-position:0 0; background-repeat:no-repeat; background-size:60px 60px; border:0; display:inline-block; float:left; font-size:0px; height:60px; left:0; margin:0; outline:none; position:absolute; top:0; width:60px; z-index:99;}
 #our_offers ul.offers_list li.offer_item:hover {box-shadow:0 0 30px rgba(0, 0, 0, 0.4);}
-#our_offers ul.offers_list li.offer_item:last-child {margin:0 0 40px 0;}
-#our_offers ul.offers_list li.offer_item h3 {clear:both; float:left; font-family:Lato-Bold; font-size:18px; line-height:24px; margin:0 0 20px 0; padding:0; position:relative; text-align:center; width:100%;}
+/* #our_offers ul.offers_list li.offer_item:last-child {margin:0 0 10px 0;} */
+#our_offers ul.offers_list li.offer_item h3 {clear:both; float:left; font-family:Lato-Bold; font-size:18px; line-height:24px; margin:0 0 20px 0; padding:0; position:relative; text-align:center; width:100%; height: 48px}
 #our_offers ul.offers_list li.offer_item img {clear:both; height:100px; margin:0 0 20px 0; padding:0; position:relative; text-align:center; width:180px;}
 #our_offers ul.offers_list li.offer_item .price {clear:both; float:left; font-family:Lato-Bold; font-size:18px; line-height:24px; margin:0 0 20px 0; padding:0; position:relative; text-align:center; width:180px;}
 #our_offers ul.offers_list li.offer_item .offers_description {clear:both; float:left; margin:0 0 20px 0; padding:0; position:relative; width:100%;}
 #our_offers ul.offers_list li.offer_item .offers_description .meta_item {clear:both; float:left; font-family:Lato-Bold; font-size:14px; line-height:20px; margin:0 0 10px 0; padding:0; position:relative; width:100%;}
 #our_offers ul.offers_list li.offer_item .offers_description .meta_item:last-child {margin:0; width:100%}
-#our_offers ul.offers_list li.offer_item .offers_description .peoples::before {background-color:; background-image:url('../images/offers_description_meta_item_1.png'); background-position:0 0; background-repeat:no-repeat; background-size:20px 20px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:20px; margin:0 10px 0 0; outline:none; position:relative; top:-5px; width:30px;}
-#our_offers ul.offers_list li.offer_item .offers_description .baggage::before {background-color:; background-image:url('../images/offers_description_meta_item_2.png'); background-position:0 0; background-repeat:no-repeat; background-size:20px 20px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:20px; margin:0 10px 0 0; outline:none; position:relative; top:-5px; width:30px;}
-#our_offers ul.offers_list li.offer_item .offers_description .gear::before {background-color:; background-image:url('../images/offers_description_meta_item_3.png'); background-position:0 0; background-repeat:no-repeat; background-size:20px 20px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:20px; margin:0 10px 0 0; outline:none; position:relative; top:-5px; width:30px;}
+#our_offers ul.offers_list li.offer_item .offers_description .peoples::before {background-image:url('../images/offers_description_meta_item_1.png'); background-position:0 0; background-repeat:no-repeat; background-size:20px 20px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:20px; margin:0 10px 0 0; outline:none; position:relative; top:-5px; width:30px;}
+#our_offers ul.offers_list li.offer_item .offers_description .baggage::before {background-image:url('../images/offers_description_meta_item_2.png'); background-position:0 0; background-repeat:no-repeat; background-size:20px 20px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:20px; margin:0 10px 0 0; outline:none; position:relative; top:-5px; width:30px;}
+#our_offers ul.offers_list li.offer_item .offers_description .gear::before {background-image:url('../images/offers_description_meta_item_3.png'); background-position:0 0; background-repeat:no-repeat; background-size:20px 20px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:20px; margin:0 10px 0 0; outline:none; position:relative; top:-5px; width:30px;}
 #our_offers ul.offers_list li.offer_item .button {clear:both; float:left; font-family:Lato-Medium; font-size:18px; line-height:24px; margin:0; padding:15px 0; width:100%;}
 
 @media all and (max-width: 1000px) {
