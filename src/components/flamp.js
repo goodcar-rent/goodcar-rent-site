@@ -1,8 +1,9 @@
 import React from 'react'
+import './flamp.css'
 
 export function Flamp (props) {
   return (
-      <div className="block100">
+      <div className="flamp">
         <div id="flamp"
             dangerouslySetInnerHTML={{
               __html: `<a class="flamp-widget" 
