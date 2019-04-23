@@ -8,6 +8,7 @@ import { Hero } from '../components/hero'
 import { CarList } from '../components/car-list'
 import { AdvantageList } from '../components/advantage-list'
 import { Contacts } from '../components/contacts'
+import { Flamp } from '../components/flamp'
 import { Map } from '../components/map'
 //import Cars from '../data/cars.json'
 
@@ -19,6 +20,7 @@ const IndexPage = ({data}) => {
           <CarList cars={data.allCars.cars}/>
           <AdvantageList/>
           <Contacts siteMeta={data.site.siteMetadata}/>
+          <Flamp/>
           <Map/>
       </Layout>
     )

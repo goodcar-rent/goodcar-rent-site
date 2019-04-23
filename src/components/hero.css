@@ -17,7 +17,7 @@
     font-family:Lato-Light;
     font-size: 22px; line-height:32px;
     margin:0 0 40px 0; padding:0; position:relative;
-    width:600px;
+    width:35%;
 }
 #slider_wrapper .button {
     clear:both; display: inline-block;

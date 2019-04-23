@@ -6,7 +6,6 @@ import './car-list.css'
 
 export function CarList (props) {
   let ndx=0
-  console.log(props)
   return (
     <div className="block100">
       <div className="wrapper">
