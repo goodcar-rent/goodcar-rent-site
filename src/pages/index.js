@@ -12,7 +12,6 @@ import { Map } from '../components/map'
 //import Cars from '../data/cars.json'
 
 const IndexPage = ({data}) => {
-    console.log(data)
     return (
       <Layout>
           <Header siteMeta={data.site.siteMetadata}/>
