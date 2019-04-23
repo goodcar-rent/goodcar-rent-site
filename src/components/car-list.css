@@ -10,7 +10,7 @@
     border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px;
     box-shadow:0 0 30px rgba(0, 0, 0, 0.2);
     float:left;
-    margin:0 0vw 10px 2%;
+    margin:0 0 10px 2%;
     padding:10px; position:relative;
     width: 23%;
 }
@@ -31,26 +31,27 @@
 
 @media all and (max-width: 1000px) {
     #our_offers {
+        margin: 0;
         padding-top: 20px;
     }
 
     #our_offers h2 {
         font-size:30px; line-height:32px;
-        width: 100vw;
+        width: 100%;
         margin-bottom: 20px;
     }
 
     #our_offers ul.offers_list {
-        width: 100vw;
+        width: 100%;
     }
 
     #our_offers ul.offers_list li.offer_item {
-        margin:0 0vw 10px 4vw;
+        margin:0 0 10px 4%;
         padding:10px; position:relative;
-        width: 46vw;
+        width: 46%;
     }
 
-    #our_offers ul.offers_list li.offer_item:last-child { margin:0 0vw 20px 4vw;}
+    #our_offers ul.offers_list li.offer_item:last-child { margin:0 0 20px 4%;}
 
     #our_offers ul.offers_list li.offer_item h3 {
         font-size:16px; line-height:20px; margin:0 0 10px 0; position:relative; text-align:center;

@@ -41,35 +41,35 @@
 }
 #top_line .top_line_right .phone a::before
   {
-    background-color:; background-image:url('../images/phone-30x30.png'); background-position:0 0; background-repeat:no-repeat;
+    background-image:url('../images/phone-30x30.png'); background-position:0 0; background-repeat:no-repeat;
     background-size:30px 30px; border:0; content:""; display:inline-block; float:left; font-size:0px; height:30px;
     margin:0 10px 0 0; outline:none; position:relative; top:0px; width:30px;
   }
 
 @media all and (max-width: 1000px) {
     #top_line {
-        width: 100vw;
+        width: 100%;
         padding: 5px 5px;
     }
     #top_line .top_line_left {
         display: inline-block;
         float: left;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        min-width: 80vw;
+        margin-left: 10%;
+        margin-right: 10%;
+        min-width: 80%;
     }
 
     #top_line .top_line_left a img {
-        max-width: 80vw;
+        max-width: 80%;
     }
 
     #top_line .top_line_right {
         display: inline-block;
         float: left;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        min-width: 80vw;
-        margin-top: 3vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        min-width: 80%;
+        margin-top: 3%;
     }
 
     #top_line .top_line_right .phone,
