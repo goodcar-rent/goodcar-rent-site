@@ -42,13 +42,53 @@
     }
 
     #our_offers ul.offers_list {
+        width: 99%;
+        margin-left: 1%;
+    }
+
+    #our_offers ul.offers_list li.offer_item {
+        margin:0 1% 10px 1%;
+        padding:10px; position:relative;
+        width: 31%;
+    }
+
+    #our_offers ul.offers_list li.offer_item h3 {
+        font-size:16px; line-height:20px; margin:0 0 10px 0; position:relative; text-align:center;
+        width:100%;
+        height: 40px;
+    }
+
+    #our_offers ul.offers_list li.offer_item .offers_description .meta_item {
+        clear:both; float:left; font-family:Lato-Bold; font-size:14px; line-height:20px; margin:0 0 10px 0; padding:0; position:relative; width:100%;
+    }
+    #our_offers ul.offers_list li.offer_item img {
+        max-width: 100%;
+    }
+    #our_offers ul.offers_list li.offer_item .offers_description .peoples::before {width:20px;}
+    #our_offers ul.offers_list li.offer_item .offers_description .baggage::before {width:20px;}
+    #our_offers ul.offers_list li.offer_item .offers_description .gear::before {width:20px;}
+}
+
+@media all and (max-width: 550px) {
+    #our_offers {
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    #our_offers h2 {
+        font-size:30px; line-height:32px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #our_offers ul.offers_list {
         width: 100%;
     }
 
     #our_offers ul.offers_list li.offer_item {
-        margin:0 0 10px 4%;
+        margin:0 1% 10px 1%;
         padding:10px; position:relative;
-        width: 46%;
+        width: 48%;
     }
 
     #our_offers ul.offers_list li.offer_item:last-child { margin:0 0 20px 4%;}
