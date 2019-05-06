@@ -1,5 +1,6 @@
 import React from 'react'
 //import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import { Header } from '../components/header'
@@ -7,20 +8,23 @@ import { Hero } from '../components/hero'
 import { CarList } from '../components/car-list'
 import { AdvantageList } from '../components/advantage-list'
 import { Contacts } from '../components/contacts'
+import { Flamp } from '../components/flamp'
 import { Map } from '../components/map'
 //import Cars from '../data/cars.json'
 
-const IndexPage = ({data}) => (
-  <Layout>
-    <Header siteMeta={data.site.siteMetadata } />
-    <Hero />
-    <CarList cars={ data.allCar.edges.map( (item) => item.node) }/>
-    <AdvantageList/>
-    <Contacts siteMeta={data.site.siteMetadata } />
-    <Map />
-  </Layout>
-)
-
+const IndexPage = ({data}) => {
+    return (
+      <Layout>
+          <Header siteMeta={data.site.siteMetadata}/>
+          <Hero/>
+          <CarList cars={data.allCars.cars}/>
+          <AdvantageList/>
+          <Contacts siteMeta={data.site.siteMetadata}/>
+          <Flamp/>
+          <Map/>
+      </Layout>
+    )
+}
 
 /*({data}) => (
   <Layout>
@@ -57,7 +61,7 @@ const IndexPage = ({data}) => (
       }
 
 */
-
+// cars( filter: { status: {eq: "PUBLISHED"}} ) {
 export const query = graphql`
   query {
     site {
@@ -71,9 +75,8 @@ export const query = graphql`
         social_ig
       }
     }
-    allCar(filter: {status: {eq: "PUBLISHED"}}) {
-        edges {
-          node  {
+    allCars {
+        cars(where: { status: PUBLISHED }, orderBy: orderby_ASC) {
             id
             caption
             icon {
@@ -90,7 +93,6 @@ export const query = graphql`
             people
             price
             status
-          }
         }
     }
   }`

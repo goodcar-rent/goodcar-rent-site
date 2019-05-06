@@ -16,16 +16,16 @@
     #our_advantages h2 {
         font-size:30px; line-height:32px;
         margin-bottom: 20px;
-        width: 100vw;
+        width: 100%;
     }
 
     #our_advantages ul.our_advantages_list {
-        width: 100vw;
+        width: 100%;
     }
 
     #our_advantages ul.our_advantages_list li.advantage_item {
-        margin: 0 5vw 20px 0;
-        width: 45vw;
+        margin: 0 5% 20px 0;
+        width: 45%;
     }
 
     #our_advantages ul.our_advantages_list li.advantage_item .head_text {

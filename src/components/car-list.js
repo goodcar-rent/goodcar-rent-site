@@ -6,12 +6,11 @@ import './car-list.css'
 
 export function CarList (props) {
   let ndx=0
-  console.log(props)
   return (
     <div className="block100">
       <div className="wrapper">
         <div id="our_offers">
-          <h2>Наши предложения</h2>
+          <h2>Выбирайте из наших автомобилей:</h2>
           <ul className="offers_list">
             {props.cars.map( (item) =>
               <CarCard

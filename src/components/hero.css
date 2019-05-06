@@ -2,7 +2,7 @@
 #slider_wrapper {
     clear:both; float:left; height:450px;
     margin:0; padding:40px 0; position:relative;
-    width: 100vw;
+    width: 100%;
 }
 #slider_wrapper .big_text {
     clear: both; float: left;
@@ -17,7 +17,7 @@
     font-family:Lato-Light;
     font-size: 22px; line-height:32px;
     margin:0 0 40px 0; padding:0; position:relative;
-    width:600px;
+    width:35%;
 }
 #slider_wrapper .button {
     clear:both; display: inline-block;
@@ -31,16 +31,17 @@
   }
   #slider_wrapper .big_text {
       font-size:30px; line-height:32px;
-      margin-left: 10vw;
-      width: 80vw; text-wrap: normal;
+      margin-left: 10%;
+      width: 80%; text-wrap: normal;
   }
   #slider_wrapper .small_text {
       font-size:22px; line-height:26px;
-      margin-left: 10vw; width:80vw;
+      margin-left: 10%;
+      width:80%;
   }
   #slider_wrapper .button {
       font-size:22px; line-height:26px;
-      margin-left: 10vw; min-width: 30vw;
+      margin-left: 10%; min-width: 30%;
       margin-top: 50px;
   }
 

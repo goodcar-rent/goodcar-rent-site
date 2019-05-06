@@ -14,7 +14,7 @@ export function Header (props) {
             </a>
           </div>
           <div className="top_line_right">
-            <div className="description">Появились вопросы? Звоните!</div>
+            <div className="description">Аренда машины в Новосибирске:</div>
             <div className="phone">
               <a
                 href={`tel:${props.siteMeta.tel}`}

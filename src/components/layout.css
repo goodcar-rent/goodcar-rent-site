@@ -147,6 +147,6 @@ strong a
 
 @media all and (max-width: 1000px) {
     .wrapper {
-        width: 100vw;
+        width: 100%;
     }
 }

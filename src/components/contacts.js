@@ -20,7 +20,7 @@ export function Contacts (props) {
                                                                   title="Позвонить">{tel_formatted}</a> (WhatsApp, Telegram, Viber)</p>
               <p className="row"><strong>Наш e-mail: </strong> <a href={`mailto:${props.siteMeta.email}`} target="_self"
                                                                  title="Написать">{props.siteMeta.email}</a></p>
-              <p className="row"><strong>Офис работает: </strong>Будние дни с 09:00 – 18:00, <strong>суббота</strong> с 10:00 до 15:00, а в остальное время мы ждем ваших обращений по телефону или почте!</p>
+              <p className="row"><strong>Офис работает: </strong>Будние дни с 09:00 – 18:00, <strong>суббота</strong> с 10:00 до 15:00, а в остальное время мы ждем ваших обращений по телефону или почте или с сайта!</p>
               <div className="social_buttons_list">
                 <a href={props.siteMeta.social_vk} className="social_button vkontakte" target="_blank" title="Вконтакте" rel="nofollow noopener noreferrer"> </a>
                 <a href={props.siteMeta.social_fb} className="social_button facebook" target="_blank" title="Facebook" rel="nofollow noopener noreferrer"> </a>
@@ -28,7 +28,7 @@ export function Contacts (props) {
               </div>
             </div>
             <div className="right_contacts">
-              <h3 id='formOrder'>Отправить заявку</h3>
+              <h3 id='formOrder'>Оставить заявку - мы вам перезвоним:</h3>
               <form name="order" method="POST" data-netlify="true">
                 <label className="row50">
                   <p>Ваше имя:</p>
@@ -46,14 +46,14 @@ export function Contacts (props) {
                          placeholder="Например: +79876543210"/>
                 </label>
                 <label className="row50">
-                  <p>Автомобиль:</p>
+                  <p>Авто для аренды:</p>
                   <select size="1" className="text_form subject" name="auto">
                     <option selected disabled>- Выберите из списка: -</option>
                     { Cars.map( (item) => <option key = {ndx++} value={item.caption}>{item.caption}</option>)}
                   </select>
                 </label>
                 <label className="row100">
-                  <p>Ваше сообщение:</p>
+                  <p>Ваше сообщение (какая-либо дополнительная информация):</p>
                   <textarea className="text_form message" name="message"></textarea>
                 </label>
                 <button className="button" type="submit">Отправить сообщение</button>
