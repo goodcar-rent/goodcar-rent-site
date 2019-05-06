@@ -76,7 +76,7 @@ export const query = graphql`
       }
     }
     allCars {
-        cars(where: { status: PUBLISHED }) {
+        cars(where: { status: PUBLISHED }, orderBy: orderby_ASC) {
             id
             caption
             icon {
