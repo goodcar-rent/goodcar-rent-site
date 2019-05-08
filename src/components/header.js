@@ -10,7 +10,7 @@ export function Header (props) {
         <div id="top_line">
           <div className="top_line_left">
             <a href="./" target="_self" title="#">
-              <img src={logo} style={{ width: '400px'}} alt="#"/>
+              <img src={logo} style={{ width: '400px'}} alt="ГудКар - прокат автомобилей в Новосибирске"/>
             </a>
           </div>
           <div className="top_line_right">

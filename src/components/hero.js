@@ -7,7 +7,7 @@ export function Hero () {
     <div className= "block100 slider">
       <div className= "wrapper">
         <div id= "slider_wrapper">
-          <p className="big_text">Быстро, выгодно и по низким ценам</p>
+          <p className="big_text">Быстро, удобно и по низким ценам</p>
           <p className="small_text">Заказывайте по телефону или оставляйте заявку на сайте:</p>
           <a
             href = "#formOrder"
