@@ -29,7 +29,8 @@ export function Contacts (props) {
             </div>
             <div className="right_contacts">
               <h3 id='formOrder'>Оставить заявку - мы вам перезвоним:</h3>
-              <form name="order" method="POST" data-netlify="true" action="/thanks">
+              <form name="order" method="POST" data-netlify="true" netlify action="/thanks" data-netlify-honeypot="bot-field">
+                <input type="hidden" name="bot-field" />
                 <label className="row50">
                   <p>Ваше имя:</p>
                   <input type="text" id="name" name="name" className="text_form name"
