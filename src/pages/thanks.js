@@ -8,8 +8,8 @@ const NotFoundPage = () => (
   <Layout>
     <BigLogoHeader />
     <div className="big_message_text">
-      <h1>Страница не найдена!</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <h1>Спасибо за заявку!</h1>
+      <p>Мы вам перезвоним в ближайшее время!</p>
     </div>
   </Layout>
 )

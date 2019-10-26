@@ -1,0 +1,21 @@
+
+#big_logo_header {
+    clear:both; float:left; margin:0; padding:100px 0; position:relative; width:100%; z-index:99;
+    text-align: center;
+    color: #ffffff;
+}
+
+#big_logo_header a img {
+    display: inline-block;
+}
+
+.big_message_text, h1, p {
+    clear: both;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    color: black;
+    background: white;
+    width: 100%;
+    text-align: center;
+}

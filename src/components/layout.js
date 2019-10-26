@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Footer from '../components/footer'
+// import Footer from '../components/footer'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -37,14 +37,6 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         {children}
-        <Footer
-          tel={data.site.siteMetadata.tel}
-          tel_formatted={data.site.siteMetadata.tel_formatted}
-          email={data.site.siteMetadata.email}
-          social_fb={data.site.siteMetadata.social_fb}
-          social_vk={data.site.siteMetadata.social_vk}
-          social_ig={data.site.siteMetadata.social_ig}
-        />
       </>
     )}
   />

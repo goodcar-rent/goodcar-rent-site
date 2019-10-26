@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './footer.css'
 
-const Footer = (props) => {
+export function Footer(props) {
   return (
     <div className="block100 black_block_000000">
       <div className="wrapper">
@@ -41,5 +41,3 @@ Footer.propTypes = {
   social_fb: PropTypes.string,
   social_ig: PropTypes.string
 }
-
-export default Footer

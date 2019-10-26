@@ -11,6 +11,8 @@ import { Contacts } from '../components/contacts'
 import { Flamp } from '../components/flamp'
 import { Map } from '../components/map'
 //import Cars from '../data/cars.json'
+ import { Footer } from '../components/footer'
+
 
 const IndexPage = ({data}) => {
     return (
@@ -22,6 +24,14 @@ const IndexPage = ({data}) => {
           <Contacts siteMeta={data.site.siteMetadata}/>
           <Flamp/>
           <Map/>
+          <Footer
+            tel={data.site.siteMetadata.tel}
+            tel_formatted={data.site.siteMetadata.tel_formatted}
+            email={data.site.siteMetadata.email}
+            social_fb={data.site.siteMetadata.social_fb}
+            social_vk={data.site.siteMetadata.social_vk}
+            social_ig={data.site.siteMetadata.social_ig}
+          />
       </Layout>
     )
 }
