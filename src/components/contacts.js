@@ -35,29 +35,29 @@ export function Contacts (props) {
                 <input type="hidden" id="order-bot-field" name="bot-field" />
                 <label className="row50">
                   <p>Ваше имя:</p>
-                  <input type="text" id="name" name="name" className="text_form name"
+                  <input type="text" id="name" name="order-name" className="text_form name"
                          placeholder="Например: Иван Иванович"/>
                 </label>
                 <label className="row50">
                   <p>Ваш e-mail:</p>
-                  <input type="text" id="email" name="email" className="text_form mail"
+                  <input type="text" id="email" name="order-email" className="text_form mail"
                          placeholder="Например: your@email.ru"/>
                 </label>
                 <label className="row50">
                   <p>Ваш телефон:</p>
-                  <input type="text" id="phone" name="phone" className="text_form phone"
+                  <input type="text" id="phone" name="order-phone" className="text_form phone"
                          placeholder="Например: +79876543210"/>
                 </label>
                 <label className="row50">
                   <p>Авто для аренды:</p>
-                  <select size="1" className="text_form subject" name="auto">
+                  <select size="1" className="text_form subject" name="order-auto">
                     <option selected disabled>- Выберите из списка: -</option>
                     { Cars.map( (item) => <option key = {ndx++} value={item.caption}>{item.caption}</option>)}
                   </select>
                 </label>
                 <label className="row100">
                   <p>Ваше сообщение (какая-либо дополнительная информация):</p>
-                  <textarea className="text_form message" name="message"></textarea>
+                  <textarea className="text_form message" id="order-message" name="order-message"></textarea>
                 </label>
                 <button className="button" type="submit">Отправить сообщение</button>
               </form>
