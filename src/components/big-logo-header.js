@@ -7,7 +7,7 @@ export function BigLogoHeader () {
     <div className="block100 black_block_000000 black_shadow_block">
       <div className="wrapper">
         <div id="big_logo_header">
-            <a href="./" target="_self" title="#">
+            <a href="./" target="/" title="#">
               <img src={logo} style={{ width: '400px'}} alt="ГудКар - прокат автомобилей в Новосибирске"/>
             </a>
         </div>
