@@ -29,23 +29,23 @@ export function Contacts (props) {
             </div>
             <div className="right_contacts">
               <h3 id='formOrder'>Оставить заявку - мы вам перезвоним:</h3>
-              <form name="order" method="POST" data-netlify="true" netlify action="/thanks"
+              <form name="order" method="POST" data-netlify="true" action="/thanks"
                     data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="order" />
-                <input type="hidden" id="order-bot-field" name="bot-field" />
+                <input type="hidden" name="bot-field" />
                 <label className="row50">
                   <p>Ваше имя:</p>
-                  <input type="text" id="name" name="order-name" className="text_form name"
+                  <input type="text" name="order-name" className="text_form name"
                          placeholder="Например: Иван Иванович"/>
                 </label>
                 <label className="row50">
                   <p>Ваш e-mail:</p>
-                  <input type="text" id="email" name="order-email" className="text_form mail"
+                  <input type="text" name="order-email" className="text_form mail"
                          placeholder="Например: your@email.ru"/>
                 </label>
                 <label className="row50">
                   <p>Ваш телефон:</p>
-                  <input type="text" id="phone" name="order-phone" className="text_form phone"
+                  <input type="text" name="order-phone" className="text_form phone"
                          placeholder="Например: +79876543210"/>
                 </label>
                 <label className="row50">
