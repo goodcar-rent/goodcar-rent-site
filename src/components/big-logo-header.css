@@ -9,7 +9,7 @@
     display: inline-block;
 }
 
-.big_message_text, h1, p {
+.big_message_text, .big_message_text h1, .big_message_text p {
     clear: both;
     text-align: center;
     margin-top: 30px;
