@@ -12,6 +12,7 @@ export function Header (props) {
     if(fullTel.style.display === 'none') {
       fullTel.style.display = 'block'
       shortTel.style.display = 'none'
+      window.yaCounter.reachGoal('TELCLICKED')
     } else {
       fullTel.style.display = 'none'
       shortTel.style.display = 'block'
