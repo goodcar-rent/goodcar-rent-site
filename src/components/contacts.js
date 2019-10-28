@@ -50,8 +50,8 @@ export function Contacts (props) {
                 </label>
                 <label className="row50">
                   <p>Авто для аренды:</p>
-                  <select size="1" className="text_form subject" name="order-auto">
-                    <option selected disabled>- Выберите из списка: -</option>
+                  <select size="1" className="text_form subject" name="order-auto" defaultValue="defvalue">
+                    <option key="defvalue" disabled>- Выберите из списка: -</option>
                     { Cars.map( (item) => <option key = {ndx++} value={item.caption}>{item.caption}</option>)}
                   </select>
                 </label>
