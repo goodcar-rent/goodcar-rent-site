@@ -18,8 +18,8 @@ export function CarList (props) {
                 caption={item.caption}
                 icon={item.icon}
                 ribbon=""
-                baggage={item.baggage.toString()}
-                people={item.people.toString()}
+                baggage={parseInt(item.baggage)}
+                people={parseInt(item.people)}
                 gear={item.transmission.toString()}
                 price={item.price} />)}
           </ul>
