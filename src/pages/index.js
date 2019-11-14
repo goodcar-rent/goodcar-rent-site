@@ -21,7 +21,7 @@ const IndexPage = ({data}) => {
           <Hero/>
           <CarList cars={data.allCars.cars}/>
           <AdvantageList/>
-          <Contacts siteMeta={data.site.siteMetadata}/>
+          <Contacts cars={data.allCars.cars} siteMeta={data.site.siteMetadata}/>
           <Flamp/>
           <Map/>
           <Footer

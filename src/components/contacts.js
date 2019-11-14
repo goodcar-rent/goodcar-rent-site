@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './contacts.css'
-import Cars from '../data/cars.json'
+// import Cars from '../data/cars.json'
 
 export function Contacts (props) {
   const tel_formatted = props.siteMeta.tel_formatted ? props.siteMeta.tel_formatted : props.siteMeta.tel
@@ -52,7 +52,7 @@ export function Contacts (props) {
                   <p>Авто для аренды:</p>
                   <select size="1" className="text_form subject" name="order-auto" defaultValue="defvalue">
                     <option key="defvalue" disabled>- Выберите из списка: -</option>
-                    { Cars.map( (item) => <option key = {ndx++} value={item.caption}>{item.caption}</option>)}
+                    { props.cars.map( (item) => <option key = {ndx++} value={item.caption}>{item.caption}</option>)}
                   </select>
                 </label>
                 <label className="row100">
@@ -71,6 +71,16 @@ export function Contacts (props) {
 }
 
 Contacts.propTypes = {
+	cars: PropTypes.arrayOf(PropTypes.shape({
+    caption: PropTypes.string,
+    icon: PropTypes.shape({
+      url: PropTypes.string
+    }),
+    baggage: PropTypes.number,
+    people: PropTypes.number,
+    transmission: PropTypes.string,
+    price: PropTypes.number
+  })),
   siteMeta: PropTypes.shape({
     tel: PropTypes.string,
     tel_formatted: PropTypes.string,
