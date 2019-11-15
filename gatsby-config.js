@@ -44,6 +44,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '1273628269511577',
+      },
+    },
+    {
       resolve: `gatsby-source-graphql`,
       options: {
         typeName: 'ALLCARS',
