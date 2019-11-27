@@ -2,6 +2,7 @@ require('dotenv-safe').config()
 
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://www.GoodCar.rent',
     title: 'GoodCar.rent - Прокат машин в Новосибирске, посуточная аренда автомобилей',
     tel: '+79513888888',
     tel_formatted: '+7 (951) 388-88-88',
@@ -79,6 +80,20 @@ module.exports = {
         }`,*/
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        sitemapSize: 5000
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.GoodCar.rent',
+        sitemap: 'https://www.GoodCar.rent/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
     /*{
       resolve: `gatsby-plugin-favicon`,
       options: {
