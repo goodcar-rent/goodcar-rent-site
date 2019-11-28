@@ -34,7 +34,7 @@ const Layout = ({ children }) => (
             { name: 'google-site-verification', content: 's6u0dDqDiZOHKHU27dNbrCfZtVo9kMmJn9g0RVfIRhs'}
           ]}
         >
-          <html lang="en" />
+          <html lang="ru" />
         </Helmet>
         {children}
       </>

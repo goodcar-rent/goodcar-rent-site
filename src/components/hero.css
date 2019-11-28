@@ -1,4 +1,6 @@
-.slider {background:url('../images/slider-img-1920.jpg') no-repeat bottom center;}
+.no-webp .slider {background:url('../images/slider-img-1920.jpg') no-repeat bottom center;}
+.webp .slider {background:url('../images/slider-img-1920.webp') no-repeat bottom center;}
+
 #slider_wrapper {
     clear:both; float:left; height:450px;
     margin:0; padding:40px 0; position:relative;
