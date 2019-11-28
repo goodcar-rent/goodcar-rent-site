@@ -26,7 +26,7 @@ module.exports = {
       },
     },
 /*    'gatsby-plugin-offline', */
-    {
+/*    {
       resolve: 'gatsby-plugin-yandex-metrika',
       options: {
         trackingId: '50703043',
@@ -34,8 +34,8 @@ module.exports = {
         trackHash: true,
         version: 2,
       },
-    },
-    {
+    }, */
+/*    {
       resolve: `gatsby-plugin-gtag`,
       options: {
         // your google analytics tracking id
@@ -49,7 +49,7 @@ module.exports = {
       options: {
         pixelId: '1273628269511577',
       },
-    },
+    }, */
     {
       resolve: `gatsby-source-graphql`,
       options: {
