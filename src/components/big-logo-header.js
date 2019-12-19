@@ -8,7 +8,7 @@ export function BigLogoHeader () {
       <div className="wrapper">
         <div id="big_logo_header">
             <a href="/"  target="_self" title="#">
-              <img src={logo} style={{ width: '400px'}} alt="ГудКар - прокат автомобилей в Новосибирске"/>
+              <img src={logo} style={{ width: '400px'}} alt="ГудКар, прокат авто в Новосибирске GoodCar.rent"/>
             </a>
         </div>
       </div>

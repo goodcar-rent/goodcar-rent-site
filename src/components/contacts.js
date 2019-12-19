@@ -14,7 +14,6 @@ export function Contacts (props) {
           <div id="our_contacts">
             <h2>Наши контакты</h2>
             <div className="left_contacts">
-              <h3>Контактная информация</h3>
               <p className="row"><strong>Офис: </strong> г. Новосибирск, ул. Фабричная 10, офис 213</p>
               <p className="row"><strong>Наш телефон: </strong> <a href={`tel:${props.siteMeta.tel}`} target="_self"
                                                                   title="Позвонить">{tel_formatted}</a> (WhatsApp, Telegram, Viber)</p>
@@ -27,7 +26,7 @@ export function Contacts (props) {
                 <a href={props.siteMeta.social_ig} className="social_button instagram" target="_blank" title="Instagram" rel="nofollow noopener noreferrer"> </a>
               </div>
             </div>
-            <div className="right_contacts">
+            <div className="right_contacts" display="none">
               <h3 id='formOrder'>Оставить заявку - мы вам перезвоним:</h3>
               <form name="order" method="POST" data-netlify="true" action="/thanks"
                     data-netlify-honeypot="bot-field">

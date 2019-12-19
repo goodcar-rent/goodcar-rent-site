@@ -1,6 +1,6 @@
 #our_contacts {clear:both; float:left; margin:0; padding:40px 0; position:relative; width:100%;}
 #our_contacts h2 {clear:both; float:left; font-family:Lato-Bold; font-size:50px; line-height:56px; margin:0 0 40px 0; padding:0; position:relative; text-align:center; width:100%;}
-#our_contacts .left_contacts {float:left; margin:0 20px 0 0; padding:0; position:relative; width:480px;}
+#our_contacts .left_contacts {float:left; margin:0 20px 0 0; padding:0; position:relative; width:100%;}
 #our_contacts .left_contacts h3 {clear:both; float:left; font-family:Lato-Bold; font-size:30px; line-height:36px; margin:0 0 30px 0; padding:0; position:relative; width:100%;}
 #our_contacts .left_contacts .row {clear:both; float:left; font-family:Lato-Regular; font-size:18px; line-height:24px; margin:0 0 10px 0; padding:0; position:relative; width:100%;}
 #our_contacts .left_contacts .social_buttons_list {clear:both; float:left; margin:10px 0 0 0; padding:0; position:relative;}
@@ -22,6 +22,7 @@
     float:left; margin:0 0 0 20px;
     padding:20px; position:relative;
     width:480px;
+    display: none;
 }
 #our_contacts .right_contacts h3 {clear:both; float:left; font-family:Lato-Bold; font-size:30px; line-height:36px; margin:0 0 30px 0; padding:0; position:relative; text-align:center; width:100%;}
 #our_contacts .right_contacts form {clear:both; float:left; margin:0; padding:0; position:relative; width:100%;}
