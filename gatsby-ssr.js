@@ -199,7 +199,7 @@ export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
                   accurateTrackBounce:true,
                   webvisor:false
              });
-          }, 2000);
+          }, 14000);
          `,
       }}
     />,
@@ -226,7 +226,7 @@ export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1273628269511577');
             fbq('track', 'PageView');
-          }, 2300);
+          }, 14300);
          `,
       }}
     />,
@@ -250,8 +250,8 @@ export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'UA-23824119-2'
-          }, 2600);
+            gtag('config', 'UA-23824119-2');
+          }, 14600);
          `,
       }}
     />,

@@ -40,13 +40,8 @@ const Layout = ({ children }) => (
           <link rel="preconnect" href="//tile1.maps.2gis.com" />
           <link rel="preconnect" href="//tile2.maps.2gis.com" />
           <link rel="preconnect" href="//tile3.maps.2gis.com" />
-          <link rel="preconnect" href="//www.google-analytics.com" />
           <link rel="preconnect" href="//mc.yandex.ru" />
           <link rel="preconnect" href="//connect.facebook.net" />
-          <link rel="preconnect" href="//maps.api.2gis.ru" />
-          <link rel="preconnect" href="//catalog.api.2gis.ru" />
-          <link rel="preconnect" href="//widgets.2gis.com" />
-          <link rel="preconnect" href="//cdn1.flamp.ru" />
           <link rel="preconnect" href="//media.graphcms.com" />
           <link rel="preconnect" href="//cdn.jsdelivr.net" />
 
