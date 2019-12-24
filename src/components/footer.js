@@ -8,7 +8,7 @@ export function Footer(props) {
       <div className="wrapper">
         <div id="footer">
           <div className="foot_left">
-            <p className="copyright"><a href="/" target="_self" title="GoodCar.rent">GoodCars.rent</a> © 2018</p>
+            <p className="copyright"><a href="/" target="_self" title="GoodCar.rent">GoodCar.rent</a> © 2018</p>
             <h3 className="description">Все права защищены. Копирование материалов с сайта без указания автора -
               запрещено</h3>
             <p className="developer">Дизайн сайта &mdash; <a href="http://veshkin.ru" target="_blank" rel="nofollow noopener noreferrer"

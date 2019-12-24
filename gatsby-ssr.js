@@ -249,5 +249,20 @@ export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
          `,
       }}
     />,
+    <script key="lazyloadjs-init"
+      type="text/javascript"
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.lazyLoadOptions = {
+          elements_selector: ".lazy",
+          };         
+        `,
+      }}
+    />,
+    <script key="lazyloadjs-script"
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"
+      async
+    />,
   ])
 }
