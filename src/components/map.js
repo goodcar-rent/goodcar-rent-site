@@ -65,7 +65,7 @@ export function Map () {
                             opt: n.opt,
                             org: a
                         };
-                        window.getElementById('map').appendChild(r({
+                        document.getElementById('map').appendChild(r({
                             width: e,
                             height: d,
                             borderColor: s,
@@ -79,7 +79,7 @@ export function Map () {
                         a ? (n = a.w ? parseInt(a.w, 10) : d,
                         e = a.h ? parseInt(a.h, 10) : s) : (n = d,
                         e = s),
-                        document.write(r({
+                        document.getElementById('map').appendChild(r({
                             width: n,
                             height: e,
                             src: i("mini", t)
