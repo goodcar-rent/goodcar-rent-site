@@ -48,6 +48,7 @@ const Layout = ({ children }) => (
           <link rel="preconnect" href="//widgets.2gis.com" />
           <link rel="preconnect" href="//cdn1.flamp.ru" />
           <link rel="preconnect" href="//media.graphcms.com" />
+          <link rel="preconnect" href="//cdn.jsdelivr.net" />
 
           <link rel="dns-prefetch" href="//tile0.maps.2gis.com" />
           <link rel="dns-prefetch" href="//tile1.maps.2gis.com" />
@@ -61,6 +62,7 @@ const Layout = ({ children }) => (
           <link rel="dns-prefetch" href="//widgets.2gis.com" />
           <link rel="dns-prefetch" href="//cdn1.flamp.ru" />
           <link rel="dns-prefetch" href="//media.graphcms.com" />
+          <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
         </Helmet>
         {children}
       </>
