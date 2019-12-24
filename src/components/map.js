@@ -92,12 +92,16 @@ export function Map () {
 
                 </script>
                 <script charset="utf-8">
-                new DGWidgetLoader({
-                    "width":"100%","height":600,
-                    "borderColor":"#a3a3a3",
-                    "pos":{"lat":55.02040829831389,"lon":82.9117798805237,"zoom":16},
-                    "opt":{"city":"novosibirsk"},"org":[{"id":"70000001033450038"}]});
-                </script>
+                  setTimeout(
+                    function(){
+                      new DGWidgetLoader({
+                          "width":"100%","height":600,
+                          "borderColor":"#a3a3a3",
+                          "pos":{"lat":55.02040829831389,"lon":82.9117798805237,"zoom":16},
+                          "opt":{"city":"novosibirsk"},"org":[{"id":"70000001033450038"}]});
+                    }, 3500
+                  );
+                  </script>
                 <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
               `}}
         />
