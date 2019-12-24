@@ -20,7 +20,7 @@ export function Map () {
                     elem.onload = mapLoad; 
                     elem.src = '//widgets.2gis.com/js/DGWidgetLoader.js';
                     document.getElementsByTagName('body')[0].appendChild(elem);
-                }, 3000);
+                }, 3300);
                 <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
             `}}
         />

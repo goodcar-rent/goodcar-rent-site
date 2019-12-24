@@ -13,8 +13,11 @@ export function Flamp (props) {
               data-flamp-widget-id="70000001033450038" 
               data-flamp-widget-width="100%" 
               data-flamp-widget-count="3">Отзывы о GoodCar.rent на Флампе</a>
-              <script>!function(d,s){var js,fjs=d.getElementsByTagName(s)[0];js=d.createElement(s);
-              js.async=1;js.src="//widget.flamp.ru/loader.js";fjs.parentNode.insertBefore(js,fjs);}(document,"script");
+              <script>
+                setTimeout(function(){
+                  !function(d,s){var js,fjs=d.getElementsByTagName(s)[0];js=d.createElement(s);
+                  js.async=1;js.src="//widget.flamp.ru/loader.js";fjs.parentNode.insertBefore(js,fjs);}(document,"script");
+                }, 3000);
               </script>`
           }}
         />
