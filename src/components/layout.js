@@ -35,6 +35,32 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="ru" />
+
+          <link rel="preconnect" href="//tile0.maps.2gis.com" />
+          <link rel="preconnect" href="//tile1.maps.2gis.com" />
+          <link rel="preconnect" href="//tile2.maps.2gis.com" />
+          <link rel="preconnect" href="//tile3.maps.2gis.com" />
+          <link rel="preconnect" href="//www.google-analytics.com" />
+          <link rel="preconnect" href="//mc.yandex.ru" />
+          <link rel="preconnect" href="//connect.facebook.net" />
+          <link rel="preconnect" href="//maps.api.2gis.ru" />
+          <link rel="preconnect" href="//catalog.api.2gis.ru" />
+          <link rel="preconnect" href="//widgets.2gis.com" />
+          <link rel="preconnect" href="//cdn1.flamp.ru" />
+          <link rel="preconnect" href="//media.graphcms.com" />
+
+          <link rel="dns-prefetch" href="//tile0.maps.2gis.com" />
+          <link rel="dns-prefetch" href="//tile1.maps.2gis.com" />
+          <link rel="dns-prefetch" href="//tile2.maps.2gis.com" />
+          <link rel="dns-prefetch" href="//tile3.maps.2gis.com" />
+          <link rel="dns-prefetch" href="//www.google-analytics.com" />
+          <link rel="dns-prefetch" href="//mc.yandex.ru" />
+          <link rel="dns-prefetch" href="//connect.facebook.net" />
+          <link rel="dns-prefetch" href="//maps.api.2gis.ru" />
+          <link rel="dns-prefetch" href="//catalog.api.2gis.ru" />
+          <link rel="dns-prefetch" href="//widgets.2gis.com" />
+          <link rel="dns-prefetch" href="//cdn1.flamp.ru" />
+          <link rel="dns-prefetch" href="//media.graphcms.com" />
         </Helmet>
         {children}
       </>
