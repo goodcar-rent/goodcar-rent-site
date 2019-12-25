@@ -13,22 +13,22 @@ export function AdvantageList () {
           <h2>Наши преимущества</h2>
           <ul className="our_advantages_list">
             <li className="advantage_item">
-              <img src={advantage_item_1} alt="#"/>
+              <img className="lazy" data-src={advantage_item_1} alt="Большой парк автомобилей"/>
               <p className="head_text">Большой парк автомобилей</p>
               <p className="description">Разумные цены. Техническая поддержка 24 часа!</p>
             </li>
             <li className="advantage_item">
-              <img src={advantage_item_2} alt="#"/>
+              <img className="lazy" data-src={advantage_item_2} alt="Дополнительные услуги"/>
               <p className="head_text">Дополнительные услуги</p>
               <p className="description">Доставка автомобиля по адресу клиента. Возможность безлимитного пробега! Возможность любого дополнительного страхования.</p>
             </li>
             <li className="advantage_item">
-              <img src={advantage_item_3} alt="#"/>
+              <img className="lazy" data-src={advantage_item_3} alt="Чистые и ухоженные автомобили"/>
               <p className="head_text">Чистые и ухоженные автомобили</p>
               <p className="description">Всегда чистые и заправленные автомобили.</p>
             </li>
             <li className="advantage_item">
-              <img src={advantage_item_4} alt="#"/>
+              <img className="lazy" data-src={advantage_item_4} alt="Быстрое оформление документов"/>
               <p className="head_text">Быстрое оформление документов</p>
               <p className="description">Заказать и получить машину быстро и легко - по двум документам. Оформление договора меньше 10 минут</p>
             </li>

@@ -26,20 +26,20 @@ const CarCard = props => {
 			{hitSpan}
 			<h3>{props.caption}</h3>
 
-			{props.icon === 'logan' && <img src={Icon_Logan2018} alt="Logan"/> }
-			{props.icon === 'logan-new' && <img src={Icon_LoganNew} alt="Renault Logan"/> }
-			{props.icon === 'solaris' && <img src={Icon_Solaris} alt="Hyndai Solaris"/> }
-			{props.icon === 'rio' && <img src={Icon_Rio} alt="Kia Rio"/> }
-			{props.icon === 'accent' && <img src={Icon_Accent} alt="Hyundai Accent"/> }
-			{props.icon === 'spectra' && <img src={Icon_Spectra} alt="Kia Spectra"/> }
-			{props.icon === 'lacetti' && <img src={Icon_Lacetti} alt="Chevrolet Lacetti"/> }
-			{props.icon === 'nexia' && <img src={Icon_Nexia} alt="Daewoo Nexia"/> }
-			{props.icon === 'matrix' && <img src={Icon_Matrix} alt="Hyundai Matrix"/> }
-			{props.icon === 'polo' && <img src={Icon_Polo} alt="Volkswagen Polo"/> }
-			{props.icon === 'focus' && <img src={Icon_Focus} alt="Ford Focus"/> }
-			{props.icon === 'almera' && <img src={Icon_Almera} alt="Nissan Almera"/> }
+			{props.icon === 'logan' && <img className="lazy" data-src={Icon_Logan2018} alt="Logan"/> }
+			{props.icon === 'logan-new' && <img className="lazy" data-src={Icon_LoganNew} alt="Renault Logan"/> }
+			{props.icon === 'solaris' && <img className="lazy" data-src={Icon_Solaris} alt="Hyndai Solaris"/> }
+			{props.icon === 'rio' && <img className="lazy" data-src={Icon_Rio} alt="Kia Rio"/> }
+			{props.icon === 'accent' && <img className="lazy" data-src={Icon_Accent} alt="Hyundai Accent"/> }
+			{props.icon === 'spectra' && <img className="lazy" data-src={Icon_Spectra} alt="Kia Spectra"/> }
+			{props.icon === 'lacetti' && <img className="lazy" data-src={Icon_Lacetti} alt="Chevrolet Lacetti"/> }
+			{props.icon === 'nexia' && <img className="lazy" data-src={Icon_Nexia} alt="Daewoo Nexia"/> }
+			{props.icon === 'matrix' && <img className="lazy" data-src={Icon_Matrix} alt="Hyundai Matrix"/> }
+			{props.icon === 'polo' && <img className="lazy" data-src={Icon_Polo} alt="Volkswagen Polo"/> }
+			{props.icon === 'focus' && <img className="lazy" data-src={Icon_Focus} alt="Ford Focus"/> }
+			{props.icon === 'almera' && <img className="lazy" data-src={Icon_Almera} alt="Nissan Almera"/> }
 
-      {props.icon.url !== undefined && <img src={props.icon.url} alt={`${props.caption}`} />}
+      {props.icon.url !== undefined && <img className="lazy" data-src={props.icon.url} alt={`${props.caption}`} />}
 
 
 			<div className="offers_description">
