@@ -3,12 +3,14 @@ import PropTypes from 'prop-types'
 import './footer.css'
 
 export function Footer(props) {
+  const date = new Date()
+  const date_str = (date.getFullYear()).toString()
   return (
     <div className="block100 black_block_000000">
       <div className="wrapper">
         <div id="footer">
           <div className="foot_left">
-            <p className="copyright"><a href="/" target="_self" title="GoodCar.rent">GoodCar.rent</a> © 2018</p>
+            <p className="copyright"><a href="/" target="_self" title="GoodCar.rent">GoodCar.rent</a> © 2018 - { date_str }</p>
             <h3 className="description">Все права защищены. Копирование материалов с сайта без указания автора -
               запрещено</h3>
             <p className="developer">Дизайн сайта &mdash; <a href="http://veshkin.ru" target="_blank" rel="nofollow noopener noreferrer"
