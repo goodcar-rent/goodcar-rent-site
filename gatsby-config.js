@@ -3,7 +3,7 @@ require('dotenv-safe').config()
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.GoodCar.rent',
-    title: 'GoodCar.rent - Прокат машин в Новосибирске, посуточная аренда автомобилей',
+    title: '(b) GoodCar.rent - Прокат машин в Новосибирске, посуточная аренда автомобилей',
     tel: '+79513888888',
     tel_formatted: '+7 (951) 388 88 88',
     email: 'office@goodcar.rent',
