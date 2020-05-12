@@ -1,0 +1,44 @@
+.my-class {
+    margin: 3rem auto;
+    max-width: 6600px;
+}
+
+/* Подложка */
+.headerBackground {
+    position: absolute;
+    width: 1920px;
+    height: 617px;
+    left: 0px;
+    top: 0px;
+
+    background: #C4C4C4;
+}
+
+.headerPicture {
+    width: 100%;
+    height: 100%;
+    background: url('../../images/pics/bg-winter.png')
+}
+
+.headerLogo {
+    position: absolute;
+    left: 20vw;
+    top: 42px;
+    height: 32px;
+    width: 30vw;
+    background: url('../../images/pics/logo-white.svg');
+    background-repeat: no-repeat;
+
+}
+
+.headerSocial {}
+
+.headerPhones {}
+
+.headerTitle {}
+.headerForm {}
+.headerFormTitle {}
+.headerFormDateFrom {}
+.headerFormDateTo {}
+.headerFormButton {}
+
