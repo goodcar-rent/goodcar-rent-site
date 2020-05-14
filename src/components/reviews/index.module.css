@@ -1,0 +1,33 @@
+/*noinspection CssUnknownTarget*/
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800');*/
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+.flampWrapper {
+  clear: both;
+  float: left;
+  margin: 0;
+  padding: 30px 0;
+  position: relative;
+  width: 100%;
+  z-index: 99;
+}
+
+.flampTitle {
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #3c3c3c;
+}

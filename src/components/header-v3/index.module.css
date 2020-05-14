@@ -1,44 +1,257 @@
-.my-class {
-    margin: 3rem auto;
-    max-width: 6600px;
-}
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600');
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800');
 
-/* Подложка */
-.headerBackground {
-    position: absolute;
-    width: 1920px;
-    height: 617px;
-    left: 0px;
-    top: 0px;
+.headerWrapper {
+  clear: both;
+  float: left;
+  position: relative;
+  width: 100%;
+  z-index: 99;
+  height: 617px;
+  background: url('../../images/pics/bg-winter.png') no-repeat;
 
-    background: #C4C4C4;
-}
-
-.headerPicture {
-    width: 100%;
-    height: 100%;
-    background: url('../../images/pics/bg-winter.png')
 }
 
 .headerLogo {
-    position: absolute;
-    left: 20vw;
-    top: 42px;
-    height: 32px;
-    width: 30vw;
-    background: url('../../images/pics/logo-white.svg');
-    background-repeat: no-repeat;
-
+  position: absolute;
+  left: 15vw;
+  top: 42px;
+  height: 32px;
+  width: 20vw;
+  min-width: 373px;
+  min-height: 32px;
+  background: url('../../images/pics/logo-white.svg') no-repeat;
+  background-size: auto;
 }
 
-.headerSocial {}
+.headerSocialIconFb {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 50vw;
+  top: 45px;
+  margin-left: -26px;
+  background: url('../../images/pics/social-fb.svg') no-repeat;
+  background-size: contain;
+}
+.headerSocialIconIg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 50vw;
+  top: 45px;
+  margin-left: 2px;
+  background: url('../../images/pics/social-ig.svg') no-repeat;
+  background-size: contain;
+}
 
-.headerPhones {}
+.headerPhone1 {
+  /* 8-951-388-88-88 */
+  position: absolute;
+  width: auto;
+  height: 24px;
+  left: 80vw;
+  top: 30px;
 
-.headerTitle {}
-.headerForm {}
-.headerFormTitle {}
-.headerFormDateFrom {}
-.headerFormDateTo {}
-.headerFormButton {}
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
 
+  text-align: right;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+
+.headerPhone2 {
+  /* 8-800-100-16-06 */
+  position: absolute;
+  width: auto;
+  height: 24px;
+  left: 80vw;
+  top: 59px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+
+  text-align: right;
+  text-decoration-line: underline;
+
+  color: #ffffff;
+}
+
+.headerMenu {
+  position: absolute;
+  width: 1920px;
+  height: 56px;
+  left: 0;
+  top: 113px;
+
+  background: rgba(9, 10, 12, 0.7);
+}
+.menuItem {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  top: 20px;
+}
+.menu1 {
+  position: absolute;
+  left: 20vw;
+  height: 16px;
+  width: auto;
+}
+.menu2 {
+  position: absolute;
+  left: 30vw;
+  height: 16px;
+  width: auto;
+}
+.menu3 {
+  position: absolute;
+  left: 45vw;
+  height: 16px;
+  width: auto;
+}
+.menu4 {
+  position: absolute;
+  left: 55vw;
+  height: 16px;
+  width: auto;
+}
+.menu5 {
+  position: absolute;
+  left: 65vw;
+  height: 16px;
+  width: auto;
+}
+
+.headerForm {
+  position: absolute;
+  left: 90vw;
+  margin-left: -600px;
+  top: 229px;
+  width: 600px;
+  height: auto;
+}
+
+.headerFormTitle {
+  /* Прокат автомобилей в Новосибирске */
+  position: absolute;
+  width: 600px;
+  height: 180px;
+  left: 0;
+  top: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 60px;
+  /* or 100% */
+  text-align: right;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.headerFormDateCaption {
+  /* Выберите дату: */
+  position: absolute;
+  width: auto;
+  height: 16px;
+  left: 600px;
+  margin-left: -560px;
+  top: 200px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #ffffff;
+}
+
+.headerFormDateFrom {
+  position: absolute;
+  width: 140px;
+  height: 50px;
+  left: 600px;
+  margin-left: -560px;
+  top: 230px;
+
+  background: #666666;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.headerFormDateIcon {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background: url('../../images/pics/icon-calendar.svg') no-repeat;
+  background-size: contain;
+}
+.headerFormDateText {
+  position: absolute;
+  left: 80px;
+  top: 17px;
+  width: auto;
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.headerFormDateTo {
+  position: absolute;
+  width: 140px;
+  height: 50px;
+  left: 600px;
+  margin-left: -410px;
+  top: 230px;
+
+  background: #666666;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.headerFormButton {
+  position: absolute;
+  width: 260px;
+  height: 50px;
+  left: 600px;
+  margin-left: -260px;
+  top: 230px;
+
+  background: #96c11f;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 17px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}

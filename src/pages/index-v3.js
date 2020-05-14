@@ -1,8 +1,7 @@
 import React from 'react'
 //import { Link } from 'gatsby'
-import { graphql } from 'gatsby'
-
-import { HeaderV3 } from "../components"
+// import { graphql } from 'gatsby'
+import { HeaderV3, Advantages, Flamp } from "../components"
 // import Layout from '../components/layout'
 // import { Header } from '../components/header'
 // import { Hero } from '../components/hero'
@@ -17,7 +16,11 @@ import { HeaderV3 } from "../components"
 
 const IndexV3Page = () => {
     return (
-      <HeaderV3 />
+      <div>
+          <HeaderV3 />
+          <Advantages />
+          <Flamp />
+      </div>
     )
 }
 
