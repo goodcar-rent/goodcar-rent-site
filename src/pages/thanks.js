@@ -1,8 +1,8 @@
 import React from 'react'
-import Layout from '../components/layout'
-import '../components/layout.css'
-import { BigLogoHeader } from '../components/big-logo-header'
-import '../components/big-logo-header.css'
+import Layout from '../components/_legacy/layout'
+import '../components/_legacy/layout.css'
+import { BigLogoHeader } from '../components/_legacy/big-logo-header'
+import '../components/_legacy/big-logo-header.css'
 
 const NotFoundPage = () => (
   <Layout>

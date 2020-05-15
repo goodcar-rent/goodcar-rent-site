@@ -1,6 +1,6 @@
 import React from 'react'
 import './big-logo-header.css'
-import logo from '../images/logo.svg'
+import logo from '../../images/logo.svg'
 
 export function BigLogoHeader () {
   return (

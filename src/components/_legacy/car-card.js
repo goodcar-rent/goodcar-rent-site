@@ -1,25 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './car-card.css'
-import Icon_Logan2018 from '../images/cars/logan2018.png'
-import Icon_LoganNew from '../images/cars/logan-new.png'
-import Icon_Solaris from '../images/cars/hyundai-solaris-II.png'
-import Icon_Rio from '../images/cars/kia-rio.png'
-import Icon_Accent from '../images/cars/hyundai-accent-2008.png'
-import Icon_Spectra from '../images/cars/kia-spectra-2008.png'
-import Icon_Lacetti from '../images/cars/chevrolet-lacetti-2008.png'
-import Icon_Nexia from '../images/cars/daewoo-nexia-2012.png'
-import Icon_Matrix from '../images/cars/hyundai-matrix-2008.png'
-import Icon_Polo from '../images/cars/vw-polo-sedan.png'
-import Icon_Focus from '../images/cars/ford-focus-2.png'
-import Icon_Almera from '../images/cars/nissan-almera-classic.png'
+import Icon_Logan2018 from '../../images/cars/logan2018.png'
+import Icon_LoganNew from '../../images/cars/logan-new.png'
+import Icon_Solaris from '../../images/cars/hyundai-solaris-II.png'
+import Icon_Rio from '../../images/cars/kia-rio.png'
+import Icon_Accent from '../../images/cars/hyundai-accent-2008.png'
+import Icon_Spectra from '../../images/cars/kia-spectra-2008.png'
+import Icon_Lacetti from '../../images/cars/chevrolet-lacetti-2008.png'
+import Icon_Nexia from '../../images/cars/daewoo-nexia-2012.png'
+import Icon_Matrix from '../../images/cars/hyundai-matrix-2008.png'
+import Icon_Polo from '../../images/cars/vw-polo-sedan.png'
+import Icon_Focus from '../../images/cars/ford-focus-2.png'
+import Icon_Almera from '../../images/cars/nissan-almera-classic.png'
 
 const CarCard = props => {
 
 	let hitSpan = ""
 
 	if (props.ribbon === "hit")
-		hitSpan = <span className="offer_hit_label"></span>
+		hitSpan = <span className="offer_hit_label"/>
 
 	return (
 		<li className = { `offer_item ${props.ribbon === 'hit' ? 'offer_hit': ""} ` } >

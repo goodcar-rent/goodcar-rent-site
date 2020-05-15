@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import './header.css'
-import logo from '../images/logo.svg'
+import logo from '../../images/logo.svg'
 
 
 export function Header (props) {

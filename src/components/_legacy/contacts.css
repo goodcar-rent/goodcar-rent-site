@@ -6,15 +6,15 @@
 #our_contacts .left_contacts .social_buttons_list {clear:both; float:left; margin:10px 0 0 0; padding:0; position:relative;}
 #our_contacts .left_contacts .social_buttons_list a {display:inline-block; height:24px; margin:0; position:relative; text-decoration:none !important; width:24px;}
 #our_contacts .left_contacts .social_buttons_list a:last-child {margin:0;}
-#our_contacts .left_contacts .social_buttons_list a.vkontakte {background:url('../images/social-sprites-24x24.png') no-repeat 0 0;}
-#our_contacts .left_contacts .social_buttons_list a.odnoklassniki {background:url('../images/social-sprites-24x24.png') no-repeat -24px 0;}
-#our_contacts .left_contacts .social_buttons_list a.facebook {background:url('../images/social-sprites-24x24.png') no-repeat -48px 0;}
-#our_contacts .left_contacts .social_buttons_list a.twitter {background:url('../images/social-sprites-24x24.png') no-repeat -72px 0;}
-#our_contacts .left_contacts .social_buttons_list a.instagram {background:url('../images/social-sprites-24x24.png') no-repeat -96px 0;}
-#our_contacts .left_contacts .social_buttons_list a.googleplus {background:url('../images/social-sprites-24x24.png') no-repeat -120px 0;}
-#our_contacts .left_contacts .social_buttons_list a.youtube {background:url('../images/social-sprites-24x24.png') no-repeat -144px 0;}
-#our_contacts .left_contacts .social_buttons_list a.telegram {background:url('../images/social-sprites-24x24.png') no-repeat -168px 0;}
-#our_contacts .left_contacts .social_buttons_list a.skype {background:url('../images/social-sprites-24x24.png') no-repeat -192px 0;}
+#our_contacts .left_contacts .social_buttons_list a.vkontakte {background:url('../../images/social-sprites-24x24.png') no-repeat 0 0;}
+#our_contacts .left_contacts .social_buttons_list a.odnoklassniki {background:url('../../images/social-sprites-24x24.png') no-repeat -24px 0;}
+#our_contacts .left_contacts .social_buttons_list a.facebook {background:url('../../images/social-sprites-24x24.png') no-repeat -48px 0;}
+#our_contacts .left_contacts .social_buttons_list a.twitter {background:url('../../images/social-sprites-24x24.png') no-repeat -72px 0;}
+#our_contacts .left_contacts .social_buttons_list a.instagram {background:url('../../images/social-sprites-24x24.png') no-repeat -96px 0;}
+#our_contacts .left_contacts .social_buttons_list a.googleplus {background:url('../../images/social-sprites-24x24.png') no-repeat -120px 0;}
+#our_contacts .left_contacts .social_buttons_list a.youtube {background:url('../../images/social-sprites-24x24.png') no-repeat -144px 0;}
+#our_contacts .left_contacts .social_buttons_list a.telegram {background:url('../../images/social-sprites-24x24.png') no-repeat -168px 0;}
+#our_contacts .left_contacts .social_buttons_list a.skype {background:url('../../images/social-sprites-24x24.png') no-repeat -192px 0;}
 #our_contacts .right_contacts {
     border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px;
     box-shadow:0 0 30px rgba(0, 0, 0, 0.2);
