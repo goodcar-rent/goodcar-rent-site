@@ -1,7 +1,7 @@
 import React from 'react'
 //import { Link } from 'gatsby'
 // import { graphql } from 'gatsby'
-import { HeaderV3, Advantages, Flamp } from "../components"
+import { HeaderV3, Advantages, Flamp, Footer } from "../components";
 // import Layout from '../components/layout'
 // import { Header } from '../components/header'
 // import { Hero } from '../components/hero'
@@ -20,6 +20,7 @@ const IndexV3Page = () => {
           <HeaderV3 />
           <Advantages />
           <Flamp />
+          <Footer />
       </div>
     )
 }
